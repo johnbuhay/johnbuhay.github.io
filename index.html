@@ -1,5 +1,225 @@
-<html>
-  <body>
-    <h1>Hello World</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>John Buhay - Homepage</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png">
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <img src="./img/runnersworldhattrick.jpg" height="20px" style="display:inline;padding-right:7px;border-radius:50%;margin:0,0,0,0" /><span class="light">John</span> Buhay
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#tech">Technology</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>        
+                    </li>
+                    <!-- <li>
+                        <a href="./resume">Resume</a>
+                    </li> -->
+                    <li>
+                        <a href="https://www.linkedin.com/pub/john-buhay/57/b51/40"><img src="./img/logo-linkedin.png" height="20px" alt="View John Buhay's LinkedIn profile"></a>
+                    </li>
+                    <!-- <li>
+                        <a href="https://www.codeschool.com/users/jnbnyc"><img src="./img/logo-codeschool.png" height="20px" alt="View John Buhay's CodeSchool report card"></a>
+                    </li> -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">John Buhay</h1>
+                            <p class="intro-text">Eat well, Be active, Live happy</p>
+                        <!-- <h1 class="brand-heading">Grayscale</h1>
+                        <p class="intro-text">A free, responsive, one page Bootstrap theme.<br>Created by Start Bootstrap.</p> -->
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About me</h2>
+                <p><img class="img-responsive fa circle" src="./img/runnersworldhattrick.jpg"/></p>
+                <p class="terminal"><i class="red-style">$</i> whoami</p>
+                <p class="terminal">Not your typical programmer. Get to know me and I'm sure we can make something wonderful together.</p>
+                <!-- <h2>About Grayscale</h2>
+                <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
+                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p> -->
+                <a href="#tech" class="btn btn-circle page-scroll">
+                    <i class="fa fa-angle-double-down animated"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="tech" class="content-section text-center">
+        <div class="tech-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Currently developing with:</h2>
+                    <div class="terminal">
+                        <p>
+                            <img class="tech" src="./img/logo-ansible.png" alt="Ansible" />Ansible
+                            <img class="tech" src="./img/logo-vagrant.png" alt="Vagrant" />
+                            <img class="tech" src="./img/logo-virtualbox.png" alt="VirtualBox" />
+                            <!-- <img class="tech" src="./img/logo-docker-wide.png" alt="Docker" /> -->
+                            <!-- <img class="tech" src="./img/logo-coreos.png" alt="Coreos" /> -->
+                            <!-- <img class="tech" src="./img/logo-grunt.png" alt="Grunt" /> -->
+                            <!-- <img class="tech" src="./img/logo-.png" alt="" /> -->
+                            <img class="tech" src="./img/logo-akamai.png" alt="akamai" />
+                            <!-- <img class="tech" src="./img/logo-apperian.png" alt="apperian" /> -->
+                            <!-- <img class="tech" src="./img/logo-apple-rainbow.png" alt="apple" /> -->
+                            <!-- <img class="tech" src="./img/logo-artifactory.png" alt="artifactory" /> -->
+                            <img class="tech" src="./img/logo-atlassian.png" alt="atlassian" />
+                            <!-- <img class="tech" src="./img/logo-bitbucket.png" alt="bitbucket" /> -->
+                            <!-- <img class="tech" src="./img/logo-crucible.png" alt="crucible" /> -->
+                            <!-- <img class="tech" src="./img/logo-fisheye.png" alt="fisheye" /> -->
+                            <!-- <img class="tech" src="./img/logo-flowdock.png" alt="flowdock" /> -->
+                            <img class="tech" src="./img/logo-jenkins.png" alt="jenkins" />
+                            <!-- <img class="tech" src="./img/logo-jira.png" alt="jira" /> -->
+                            <img class="tech" src="./img/logo-mysql.png" alt="mysql" />
+                            <!-- <img class="tech" src="./img/logo-newrelic.png" alt="newrelic" /> -->
+                            <!-- <img class="tech" src="./img/logo-nginx.jpeg" alt="nginx" /> -->
+                            <img class="tech" src="./img/logo-git-sticker.png" alt="git" />
+                            <!-- <img class="tech" src="./img/logo-linux.png" alt="linux" /> -->
+                            <img class="tech" src="./img/logo-python-sticker.png" alt="python" />
+                            <!-- <img class="tech" src="./img/logo-rackspace-1.png" alt="rackspace" /> -->
+                            <img class="tech" src="./img/logo-nodejs.png" alt="nodeJS" />
+                            <img class="tech" src="./img/logo-redhat.png" alt="RedHat" />
+                            <img class="tech" src="./img/logo-json.png" alt="json" />
+                            <img class="tech" src="./img/logo-jquery.png" alt="jQuery" />
+                            <img class="tech" src="./img/logo-js-sticker.png" alt="javascript" />
+                            <img class="tech" src="./img/logo-css-sticker.png" alt="css" />
+                            <img class="tech" src="./img/logo-html5-sticker.png" alt="html" />
+                        </p>
+
+                        <!-- <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
+                        <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a> -->
+                        <a href="#contact" class="btn btn-circle page-scroll">
+                        <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact <span class="light">John</span> Buhay</h2>
+                <p>Feedback, suggestions and emails just to break the ice are welcome<sup>*</sup></p>
+                <p>
+                    <a class="bright-cyan" href="mailto:jnbuhaynyc+feedback@gmail.com">jnbuhaynyc+feedback@gmail.com</a>
+                    <br>
+                    <span class="disclaimer"><sup>*</sup>Please contact responsibly</span>
+                </p>
+                <!-- <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                </ul> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <!-- <div id="map"></div> -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; jnb.nyc 2015</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script> -->
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+</body>
+
 </html>
