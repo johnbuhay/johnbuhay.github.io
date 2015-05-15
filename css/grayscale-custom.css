@@ -36,6 +36,14 @@
 .bright-cyan {
     color: #33CCFF;
 }
+.bg-gray {
+    background-color: rgba(255,255,255,.3);
+    padding: 3px;
+}
+.bgc-222 {
+    background-color: #222;
+    padding: 3px;
+}
 .disclaimer {
     color:#999;
     font-size: 13px;
