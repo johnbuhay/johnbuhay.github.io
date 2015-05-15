@@ -1,0 +1,67 @@
+/*!
+ * Customizing grayscale css
+ * 
+ */
+
+.intro-custom {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/bg-bw-estate.jpg) no-repeat top center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.content-section-custom {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #222;
+    background-image: url(../img/map-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circle {
+    border-radius: 50%;
+    height: auto;
+    width: 200px;
+}
+.bright-cyan {
+    color: #33CCFF;
+}
+.disclaimer {
+    color:#999;
+    font-size: 13px;
+}
+.terminal {
+    font-family: menlo;
+}
+.tech {
+    padding-right: 7px;
+    width: auto;
+    height: auto;
+    max-height: 100px;
+    max-width: 200px;
+}
+.red-style {
+    color: #ff0066
+}
+
+.tech-section {
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background: url(../img/bg-dark-grey-wood.jpg) center center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
