@@ -3,11 +3,8 @@
 <script src="../js/bootstrap.min.js"></script>
   <!-- Include highlightJS -->
 <link rel="stylesheet" title="Monokai Sublime" href="../js/highlight/styles/monokai_sublime.css">
-<!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/default.min.css"> -->
-<!-- <script src="../js/highlight/highlight.min.js"></script> -->
-<!-- <script>hljs.initHighlightingOnLoad();</script> -->
-
-<link href="../js/prism/prism.css" rel="stylesheet" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/default.min.css">
+<script src="../js/highlight/highlight.min.js"></script>
 
 </head>
 <body>
@@ -17,325 +14,151 @@
       </h1>
     <ul class="nav nav-tabs">
       <li>yml</li>
-      <li>json</li>
     </ul>
     <section class="tab-content">
       <div class="yml-tab">
           <pre>
-            <code class="language-yaml">---
-            # version: 2015.4.0
+            <code class="hljs">
+            ---
+            <span class="hljs-comment"># version: 2015.4.0</span>
 
-            contact:
+            <span class="hljs-attribute">contact:</span>
               -
-                name: John Buhay
-                telephone: 917-239-5447
-                email: jnbuhaynyc@gmail.com
-                location: New York, NY
+                <span class="hljs-attribute">name:</span> <span class="hljs-value"><span class="hljs-string">John Buhay</span></span>
+                <span class="hljs-attribute">telephone:</span> <span class="hljs-value"><span class="hljs-number">9172395447</span></span>
+                <span class="hljs-attribute">email:</span> <span class="hljs-value"><span class="hljs-string">jnbuhaynyc@gmail.com</span></span>
+                <span class="hljs-attribute">location:</span> <span class="hljs-value"><span class="hljs-string">New York, NY</span></span>
 
-            professional_experience:
-              employer:
+            <span class="hljs-attribute">professional_experience:</span>
+              <span class="hljs-attribute">employer:</span>
                 -
-                  company: WeightWatchers International
-                  hire_date: September 2007
-                  end_date: Present
-                  positions:
+                  <span class="hljs-attribute">company:</span> <span class="hljs-value"><span class="hljs-string">WeightWatchers International</span></span>
+                  <span class="hljs-attribute">hire_date:</span> <span class="hljs-value"><span class="hljs-string">September 2007</span></span>
+                  <span class="hljs-attribute">end_date:</span> <span class="hljs-value"><span class="hljs-literal">false</span></span>
+                  <span class="hljs-attribute">positions:</span>
                     -
-                      title: DevOps Engineer
-                      team: Automation
-                      stint: May 2014 - present
-                      notable_accomplishments:
-                        - Created an Ansible role to automate Akamai related tasks by leveraging the Akamai Application
-                        - Created a POC python command line tool to manage GitHub tasks by leveraging the GitHub API
-                        - Created a python script for Jenkins to deploy mobile apps to Apperian upon successful build
-                        - Found and fixed an issue where jenkins plugins were not installed with proper versions in our local vagrant CI environment
-                        - Created Ansible roles to install and configure Magnolia CMS in Rackspace
-                      details:
-                        - Write infrastructure configurations in a Role Oriented Programming mindset
-                        - Manage VisitorSite deployments on a 2 week sprint cycle and make necessary infrastructure configurations
-                        - Support all teams with their infrastructure configuration needs while driving code as configuration initiative and requirement
+                      <span class="hljs-attribute">title:</span> <span class="hljs-value"><span class="hljs-string">DevOps Engineer</span></span>
+                      <span class="hljs-attribute">team:</span> <span class="hljs-value"><span class="hljs-string">Automation</span></span>
+                      <span class="hljs-attribute">stint:</span> <span class="hljs-value"><span class="hljs-string">May 2014 - present</span></span>
+                      <span class="hljs-attribute">notable_accomplishments:</span>
+                        - <span class="hljs-value"><span class="hljs-string">Created an Ansible role to automate Akamai related tasks by leveraging the Akamai Application</span></span>
+                        - <span class="hljs-value"><span class="hljs-string">Created a POC python command line tool to manage GitHub tasks by leveraging the GitHub API</span></span>
+                        - <span class="hljs-value"><span class="hljs-string">Created a python script for Jenkins to deploy mobile apps to Apperian upon successful build</span></span>
+                        - <span class="hljs-value"><span class="hljs-string">Found and fixed an issue where jenkins plugins were not installed with proper versions in our local vagrant CI environment</span></span>
+                        - <span class="hljs-value"><span class="hljs-string">Created Ansible roles to install and configure Magnolia CMS in Rackspace</span></span>
+                      <span class="hljs-attribute">details:</span>
+                        - <span class="hljs-value"><span class="hljs-string">Write infrastructure configurations in a Role Oriented Programming mindset</span></span>
+                        - <span class="hljs-value"><span class="hljs-string">Manage VisitorSite deployments on a 2 week sprint cycle and make necessary infrastructure configurations</span></span>
+                        - <span class="hljs-value"><span class="hljs-string">Support all teams with their infrastructure configuration needs while driving code as configuration initiative and requirement</span></span>
                     - 
-                      title: Microsite Tech Lead
-                      team: Engineering
-                      stint: March 2014 - March 2015
-                      notable_accomplishments:
-                        - Aligned Franchise website with current online brand by producing new HTML5/CSS3 template focused on UX and automated HTML generation based on directory and asset structure using NodeJS. This allows for an efficient and short project life cycle for updates to the site.
-                        - Designed and produced the continuous build and deployment pipeline for 9 international mobile microsites.
-                      details:
-                        - Changed the team's workflow to use a more Agile methodology
-                        - Completed Product Owners stories and drive time sensitive deployments coordinating the changes for main site promotional offers
+                      <span class="hljs-attribute">title:</span> <span class="hljs-value"><span class="hljs-string">Microsite Tech Lead</span></span>
+                      <span class="hljs-attribute">team:</span> <span class="hljs-value"><span class="hljs-string">Engineering</span></span>
+                      <span class="hljs-attribute">stint:</span> <span class="hljs-value"><span class="hljs-string">March 2014 - March 2015</span></span>
+                      <span class="hljs-attribute">notable_accomplishments:</span>
+                        - <span class="hljs-value"><span class="hljs-string">Aligned Franchise website with current online brand by producing new HTML5/CSS3 template focused on UX and automated HTML generation based on directory and asset structure using NodeJS. This allows for an efficient and short project life cycle for updates to the site.</span></span>
+                        - <span class="hljs-value"><span class="hljs-string">Designed and produced the continuous build and deployment pipeline for 9 international mobile microsites.</span></span>
+                      <span class="hljs-attribute">details:</span>
+                        - <span class="hljs-value"><span class="hljs-string">Changed the team's workflow to use a more Agile methodology</span></span>
+                        - <span class="hljs-value"><span class="hljs-string">Completed Product Owner's stories and drive time sensitive deployments coordinating the changes for main site promotional offers</span></span>
                     -
-                      title: .NET Engineer
-                      team: Engineering
-                      stint: March 2010 - May 2014
-                      notable_accomplishments:
-                        - Worked with a third party vendor to customize the IBM WebSphere Commerce platform to replace Microsoft eCommerce Server. Developed front-end changes to maintain brand, style and improve customer experience. Coordinated with the Marketing, eCommerce and Release team to deliver seamless store availability and marketing campaigns to our 1.5 million US subscribers.
-                      details:
-                        - Manage the ADA (American Disabilities Act) Compliance queue for completing identified defects
-                        - Coordinate with various groups to complete ADA solutions for both main and mobile sites
-                        - Troubleshoot; debug and QA hotfixes for production issues in ASP.NET
-                        - Implement code changes and QA completed tasks
-                        - Advise and support Content Operations issues as well as continue to train new employees
+                      <span class="hljs-attribute">title:</span> <span class="hljs-value"><span class="hljs-string">.NET Engineer</span></span>
+                      <span class="hljs-attribute">team:</span> <span class="hljs-value"><span class="hljs-string">Engineering</span></span>
+                      <span class="hljs-attribute">stint:</span> <span class="hljs-value"><span class="hljs-string">March 2010 - May 2014</span></span>
+                      <span class="hljs-attribute">notable_accomplishments:</span>
+                        - <span class="hljs-value"><span class="hljs-string">Worked with a third party vendor to customize the IBM WebSphere Commerce platform to replace Microsoft eCommerce Server. Developed front-end changes to maintain brand, style and improve customer experience. Coordinated with the Marketing, eCommerce and Release team to deliver seamless store availability and marketing campaigns to our 1.5 million US subscribers.</span></span>
+                      <span class="hljs-attribute">details:</span>
+                        - <span class="hljs-value"><span class="hljs-string">Manage the ADA (American Disabilities Act) Compliance queue for completing identified defects</span></span>
+                        - <span class="hljs-value"><span class="hljs-string">Coordinate with various groups to complete ADA solutions for both main and mobile sites</span></span>
+                        - <span class="hljs-value"><span class="hljs-string">Troubleshoot; debug and QA hotfixes for production issues in ASP.NET</span></span>
+                        - <span class="hljs-value"><span class="hljs-string">Implement code changes and QA completed tasks</span></span>
+                        - <span class="hljs-value"><span class="hljs-string">Advise and support Content Operations issues as well as continue to train new employees</span></span>
                     - 
-                      title: Global CMS Application Lead and Content Administrator
-                      team: Content Operations
-                      stint: September 2008 - September 2010
-                      notable_accomplishments:
-                        - Worked with the creative team and backend engineers to design new signup process and implementation for US site, now used in all international subscription sites.
-                        - Improved the Weight Tracker design (a fundamental tool for online customers) and suggested code changes to engineers so that all copy could be content managed and the same code reused in multilingual countries; now used in all international subscription sites
-                      details:
-                       - Advised engineering on how new content would be best maintained after the Release for incorporation into the design of the project
-                       - Requested new features and bug fixes from the engineering team for the GCMS / eCommerce applications and QA the results
-                       - Continued to manage the completion of Content Operations tasks
+                      <span class="hljs-attribute">title:</span> <span class="hljs-value"><span class="hljs-string">Global CMS Application Lead and Content Administrator</span></span>
+                      <span class="hljs-attribute">team:</span> <span class="hljs-value"><span class="hljs-string">Content Operations</span></span>
+                      <span class="hljs-attribute">stint:</span> <span class="hljs-value"><span class="hljs-string">September 2008 - September 2010</span></span>
+                      <span class="hljs-attribute">notable_accomplishments:</span>
+                        - <span class="hljs-value"><span class="hljs-string">Worked with the creative team and backend engineers to design new signup process and implementation for US site, now used in all international subscription sites.</span></span>
+                        - <span class="hljs-value"><span class="hljs-string">Improved the Weight Tracker design (a fundamental tool for online customers) and suggested code changes to engineers so that all copy could be content managed and the same code reused in multilingual countries; now used in all international subscription sites</span></span>
+                      <span class="hljs-attribute">details:</span>
+                       - <span class="hljs-value"><span class="hljs-string">Advised engineering on how new content would be best maintained after the Release for incorporation into the design of the project</span></span>
+                       - <span class="hljs-value"><span class="hljs-string">Requested new features and bug fixes from the engineering team for the GCMS / eCommerce applications and QA the results</span></span>
+                       - <span class="hljs-value"><span class="hljs-string">Continued to manage the completion of Content Operations tasks</span></span>
                     -
-                      title: Project Coordinator and eCommerce / GCMS Subject Matter Expert
-                      stint: September 2007 - September 2008
-                      team: Content Operations
-                      notable_accomplishments: 
-                        - Advised various teams on the capabilities of the existing web services for improving visitor experience, providing them our content dynamically and alleviating repetitive work completed by content entry team
-                      details:
-                        - Conducted weekly defect meetings to review outstanding issues; this improved communication to boost efficiency and drive on-time deliverables
-                        - Collaborated with engineering team to update content management tools and QA to ensure bug-free results
-                        - Trained staff and maintained user guides on eCommerce, CheetahMail and content management applications, promoting optimized content entry practices
-                        - Oversaw queue task performance, completion and quality
-                        - Managed projects, content design development and QA for international web-based projects in 29 websites in 31 languages
-                        - Organized development of electronic media and marketing campaigns directed at customer acquisition and retention
-                        - Coordinated involvement of key Product Owners and teams for projects including advertisements, eCommerce, marketing, electronic media campaigns and site maintenance
-                        - Updated project plans, driving timelines and deliverables
+                      <span class="hljs-attribute">title:</span> <span class="hljs-value"><span class="hljs-string">Project Coordinator and eCommerce / GCMS Subject Matter Expert</span></span>
+                      <span class="hljs-attribute">stint:</span> <span class="hljs-value"><span class="hljs-string">September 2007 - September 2008</span></span>
+                      <span class="hljs-attribute">team:</span> <span class="hljs-value"><span class="hljs-string">Content Operations</span></span>
+                      <span class="hljs-attribute">notable_accomplishments:</span>
+                        - <span class="hljs-value"><span class="hljs-string">Advised various teams on the capabilities of the existing web services for improving visitor experience, providing them our content dynamically and alleviating repetitive work completed by content entry team</span></span>
+                      <span class="hljs-attribute">details:</span>
+                        - <span class="hljs-value"><span class="hljs-string">Conducted weekly defect meetings to review outstanding issues; this improved communication to boost efficiency and drive on-time deliverables</span></span>
+                        - <span class="hljs-value"><span class="hljs-string">Collaborated with engineering team to update content management tools and QA to ensure bug-free results</span></span>
+                        - <span class="hljs-value"><span class="hljs-string">Trained staff and maintained user guides on eCommerce, CheetahMail and content management applications, promoting optimized content entry practices</span></span>
+                        - <span class="hljs-value"><span class="hljs-string">Oversaw queue task performance, completion and quality</span></span>
+                        - <span class="hljs-value"><span class="hljs-string">Managed projects, content design development and QA for international web-based projects in 29 websites in 31 languages</span></span>
+                        - <span class="hljs-value"><span class="hljs-string">Organized development of electronic media and marketing campaigns directed at customer acquisition and retention</span></span>
+                        - <span class="hljs-value"><span class="hljs-string">Coordinated involvement of key Product Owners and teams for projects including advertisements, eCommerce, marketing, electronic media campaigns and site maintenance</span></span>
+                        - <span class="hljs-value"><span class="hljs-string">Updated project plans, driving timelines and deliverables</span></span>
 
-            technology:
+            <span class="hljs-attribute">technology:</span>
               -
-                languages:
-                  - ansible
-                  - yaml
-                  - python
-                  - bash / zsh
+                <span class="hljs-attribute">languages:</span>
+                  - <span class="hljs-value"><span class="hljs-string">ansible</span></span>
+                  - <span class="hljs-value"><span class="hljs-string">yaml</span></span>
+                  - <span class="hljs-value"><span class="hljs-string">python</span></span>
+                  - <span class="hljs-value"><span class="hljs-string">bash / zsh</span></span>
+                  - <span class="hljs-value"><span class="hljs-string"></span></span>
+                    <span class="hljs-attribute">javascript:</span>
+                      - <span class="hljs-value"><span class="hljs-string">jquery</span></span>
+                      - <span class="hljs-value"><span class="hljs-string">json</span></span>
+                  - <span class="hljs-value"><span class="hljs-string">css</span></span>
+                  - <span class="hljs-value"><span class="hljs-string">html</span></span>
+                  - <span class="hljs-value"><span class="hljs-string">java</span></span>
+                  - <span class="hljs-value"><span class="hljs-string">c++</span></span>
+                  - <span class="hljs-value"><span class="hljs-string">sql</span></span>
+                  - <span class="hljs-value"><span class="hljs-string">xml</span></span>
+              -
+                <span class="hljs-attribute">tools:</span>
                   - 
-                    javascript:
-                      - jquery
-                      - json
-                  - css
-                  - html
-                  - java
-                  - c++
-                  - sql
-                  - xml
+                    <span class="hljs-attribute">git:</span>
+                      - <span class="hljs-value"><span class="hljs-string">gitflow</span></span>
+                      - <span class="hljs-value"><span class="hljs-string">github</span></span>
+                  - <span class="hljs-value"><span class="hljs-string">maven</span></span>
+                  - <span class="hljs-value"><span class="hljs-string">nodejs</span></span>
+                  - <span class="hljs-value"><span class="hljs-string">vagrant</span></span>
+                  - <span class="hljs-value"><span class="hljs-string">virtualbox</span></span>
               -
-                tools:
-                  - git / gitflow / github
-                  - maven
-                  - nodejs
-                  - vagrant
-                  - virtualbox
-              -
-                applications:
+                <span class="hljs-attribute">applications:</span>
                   -
-                    atlassian_suite:
-                      - bitbucket
-                      - confluence
-                      - crucible + fisheye
-                      - jira
-                  - artifactory
-                  - jenkins
-                  - magnolia
-                  - nginx
-                  - sublime_text
+                    <span class="hljs-attribute">atlassian_suite:</span>
+                      - <span class="hljs-value"><span class="hljs-string">bitbucket</span></span>
+                      - <span class="hljs-value"><span class="hljs-string">confluence</span></span>
+                      - <span class="hljs-value"><span class="hljs-string">crucible + fisheye</span></span>
+                      - <span class="hljs-value"><span class="hljs-string">jira</span></span>
+                  - <span class="hljs-value"><span class="hljs-string">artifactory</span></span>
+                  - <span class="hljs-value"><span class="hljs-string">jenkins</span></span>
+                  - <span class="hljs-value"><span class="hljs-string">magnolia</span></span>
+                  - <span class="hljs-value"><span class="hljs-string">nginx</span></span>
+                  - <span class="hljs-value"><span class="hljs-string">sublime text</span></span>
 
-            education:
-              -
-                school: CodeSchool
-                year: 2014 - present
+            <span class="hljs-attribute">education:</span>
               - 
-                school: Learning Tree
-                year: 2010
-                topic: Certificate in ASP.NET
+                <span class="hljs-attribute">school:</span> <span class="hljs-value"><span class="hljs-string">Learning Tree</span></span>
+                <span class="hljs-attribute">year:</span> <span class="hljs-value"><span class="hljs-number">2010</span></span>
+                <span class="hljs-attribute">topic:</span> <span class="hljs-value"><span class="hljs-string">Certificate in ASP.NET</span></span>
               - 
-                school: New York University SCPS
-                year: 2009
-                topic: Certificate in Java Programming
+                <span class="hljs-attribute">school:</span> <span class="hljs-value"><span class="hljs-string">New York University SCPS</span></span>
+                <span class="hljs-attribute">year:</span> <span class="hljs-value"><span class="hljs-number">2009</span></span>
+                <span class="hljs-attribute">topic:</span> <span class="hljs-value"><span class="hljs-string">Certificate in Java Programming</span></span>
               -
-                school: Fordham University, Bronx, NY
-                year: 2007
-                topic: Bachelor of Science in Computer Science
+                <span class="hljs-attribute">school:</span> <span class="hljs-value"><span class="hljs-string">Fordham University, Bronx, NY</span></span>
+                <span class="hljs-attribute">year:</span> <span class="hljs-value"><span class="hljs-number">2007</span></span>
+                <span class="hljs-attribute">topic:</span> <span class="hljs-value"><span class="hljs-string">Bachelor of Science in Computer Science</span></span>
 
           </code>
         </pre>
       </div>
-      <div class="json-content">
-        <h4>json</h4>
-        <pre>
-          <code class="language-javascript">{
-            "contact": [
-              {
-                "name": "John Buhay",
-                "telephone": "917-239-5447",
-                "email": "jnbuhaynyc@gmail.com",
-                "location": "New York, NY"
-              }
-            ],
-            "professional_experience": {
-              "employer": [
-                {
-                  "company": "WeightWatchers International",
-                  "hire_date": "September 2007",
-                  "end_date": "Present",
-                  "positions": [
-                    {
-                      "title": "DevOps Engineer",
-                      "team": "Automation",
-                      "stint": "May 2014 - present",
-                      "notable_accomplishments": [
-                        "Created an Ansible role to automate Akamai related tasks by leveraging the Akamai Application",
-                        "Created a POC python command line tool to manage GitHub tasks by leveraging the GitHub API",
-                        "Created a python script for Jenkins to deploy mobile apps to Apperian upon successful build",
-                        "Found and fixed an issue where jenkins plugins were not installed with proper versions in our local vagrant CI environment",
-                        "Created Ansible roles to install and configure Magnolia CMS in Rackspace"
-                      ],
-                      "details": [
-                        "Write infrastructure configurations in a Role Oriented Programming mindset",
-                        "Manage VisitorSite deployments on a 2 week sprint cycle and make necessary infrastructure configurations",
-                        "Support all teams with their infrastructure configuration needs while driving code as configuration initiative and requirement"
-                      ]
-                    },
-                    {
-                      "title": "Microsite Tech Lead",
-                      "team": "Engineering",
-                      "stint": "March 2014 - March 2015",
-                      "notable_accomplishments": [
-                        "Aligned Franchise website with current online brand by producing new HTML5/CSS3 template focused on UX and automated HTML generation based on directory and asset structure using NodeJS. This allows for an efficient and short project life cycle for updates to the site.",
-                        "Designed and produced the continuous build and deployment pipeline for 9 international mobile microsites."
-                      ],
-                      "details": [
-                        "Changed the team's workflow to use a more Agile methodology",
-                        "Completed Product Owners stories and drive time sensitive deployments coordinating the changes for main site promotional offers"
-                      ]
-                    },
-                    {
-                      "title": ".NET Engineer",
-                      "team": "Engineering",
-                      "stint": "March 2010 - May 2014",
-                      "notable_accomplishments": [
-                        "Worked with a third party vendor to customize the IBM WebSphere Commerce platform to replace Microsoft eCommerce Server. Developed front-end changes to maintain brand, style and improve customer experience. Coordinated with the Marketing, eCommerce and Release team to deliver seamless store availability and marketing campaigns to our 1.5 million US subscribers."
-                      ],
-                      "details": [
-                        "Manage the ADA (American Disabilities Act) Compliance queue for completing identified defects",
-                        "Coordinate with various groups to complete ADA solutions for both main and mobile sites",
-                        "Troubleshoot; debug and QA hotfixes for production issues in ASP.NET",
-                        "Implement code changes and QA completed tasks",
-                        "Advise and support Content Operations issues as well as continue to train new employees"
-                      ]
-                    },
-                    {
-                      "title": "Global CMS Application Lead and Content Administrator",
-                      "team": "Content Operations",
-                      "stint": "September 2008 - September 2010",
-                      "notable_accomplishments": [
-                        "Worked with the creative team and backend engineers to design new signup process and implementation for US site, now used in all international subscription sites.",
-                        "Improved the Weight Tracker design (a fundamental tool for online customers) and suggested code changes to engineers so that all copy could be content managed and the same code reused in multilingual countries; now used in all international subscription sites"
-                      ],
-                      "details": [
-                        "Advised engineering on how new content would be best maintained after the Release for incorporation into the design of the project",
-                        "Requested new features and bug fixes from the engineering team for the GCMS / eCommerce applications and QA the results",
-                        "Continued to manage the completion of Content Operations tasks"
-                      ]
-                    },
-                    {
-                      "title": "Project Coordinator and eCommerce / GCMS Subject Matter Expert",
-                      "stint": "September 2007 - September 2008",
-                      "team": "Content Operations",
-                      "notable_accomplishments": [
-                        "Advised various teams on the capabilities of the existing web services for improving visitor experience, providing them our content dynamically and alleviating repetitive work completed by content entry team"
-                      ],
-                      "details": [
-                        "Conducted weekly defect meetings to review outstanding issues; this improved communication to boost efficiency and drive on-time deliverables",
-                        "Collaborated with engineering team to update content management tools and QA to ensure bug-free results",
-                        "Trained staff and maintained user guides on eCommerce, CheetahMail and content management applications, promoting optimized content entry practices",
-                        "Oversaw queue task performance, completion and quality",
-                        "Managed projects, content design development and QA for international web-based projects in 29 websites in 31 languages",
-                        "Organized development of electronic media and marketing campaigns directed at customer acquisition and retention",
-                        "Coordinated involvement of key Product Owners and teams for projects including advertisements, eCommerce, marketing, electronic media campaigns and site maintenance",
-                        "Updated project plans, driving timelines and deliverables"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            "technology": [
-              {
-                "languages": [
-                  "ansible",
-                  "yaml",
-                  "python",
-                  "bash / zsh",
-                  {
-                    "javascript": [
-                      "jquery",
-                      "json"
-                    ]
-                  },
-                  "css",
-                  "html",
-                  "java",
-                  "c++",
-                  "sql",
-                  "xml"
-                ]
-              },
-              {
-                "tools": [
-                  "git / gitflow / github",
-                  "maven",
-                  "nodejs",
-                  "vagrant",
-                  "virtualbox"
-                ]
-              },
-              {
-                "applications": [
-                  {
-                    "atlassian_suite": [
-                      "bitbucket",
-                      "confluence",
-                      "crucible + fisheye",
-                      "jira"
-                    ]
-                  },
-                  "artifactory",
-                  "jenkins",
-                  "magnolia",
-                  "nginx",
-                  "sublime_text"
-                ]
-              }
-            ],
-            "education": [
-              {
-                "school": "CodeSchool",
-                "year": "2014 - present"
-              },
-              {
-                "school": "Learning Tree",
-                "year": 2010,
-                "topic": "Certificate in ASP.NET"
-              },
-              {
-                "school": "New York University SCPS",
-                "year": 2009,
-                "topic": "Certificate in Java Programming"
-              },
-              {
-                "school": "Fordham University, Bronx, NY",
-                "year": 2007,
-                "topic": "Bachelor of Science in Computer Science"
-              }
-            ]
-          }
-          </code></pre>
-      </div>
     </section>
-    <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../js/prism/prism.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.min.jshttp://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.min.js"></script>
+    <!-- <script>hljs.initHighlightingOnLoad();</script> -->
   </div>
 </body>
 
