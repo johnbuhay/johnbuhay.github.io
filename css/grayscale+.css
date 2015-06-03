@@ -65,11 +65,6 @@ a:focus {
     font-weight: 400;
 }
 
-.navbar-link {
-    padding-left: 3px;
-    padding-right: 2px;
-}
-
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
@@ -367,12 +362,21 @@ ul.banner-social-buttons {
 }
 
 @media(max-width:1199px) {
+    .navbar-link {
+        padding-left: inherit;
+        padding-right: inherit;
+    }
     ul.banner-social-buttons {
         margin-top: 15px;
     }
 }
 
 @media(max-width:767px) {
+    .navbar-link {
+        padding-left: 3px;
+        padding-right: 2px;
+    }
+    
     ul.banner-social-buttons li {
         display: block;
         margin-bottom: 20px;
