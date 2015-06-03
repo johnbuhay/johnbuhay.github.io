@@ -57,8 +57,17 @@ a:focus {
     color: #1d9b6c;
 }
 
+.anchor {
+    display: inline-block;
+}
+
 .light {
     font-weight: 400;
+}
+
+.navbar-link {
+    padding-left: 3px;
+    padding-right: 2px;
 }
 
 .navbar-custom {
@@ -309,6 +318,10 @@ a:focus {
 @media(min-width:767px) {
     .content-section {
         padding-top: 250px;
+    }
+
+    #resume.content-section {
+        padding-top: 150px;
     }
 
     .download-section {
