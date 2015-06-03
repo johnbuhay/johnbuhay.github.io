@@ -57,6 +57,10 @@ a:focus {
     color: #1d9b6c;
 }
 
+.anchor {
+    display: inline-block;
+}
+
 .light {
     font-weight: 400;
 }
@@ -314,6 +318,10 @@ a:focus {
 @media(min-width:767px) {
     .content-section {
         padding-top: 250px;
+    }
+
+    #resume.content-section {
+        padding-top: 150px;
     }
 
     .download-section {
