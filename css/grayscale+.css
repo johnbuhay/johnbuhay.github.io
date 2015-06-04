@@ -363,10 +363,6 @@ ul.banner-social-buttons {
 }
 
 @media(max-width:1199px) {
-    .navbar-link {
-        padding-left: inherit;
-        padding-right: inherit;
-    }
     ul.banner-social-buttons {
         margin-top: 15px;
     }
