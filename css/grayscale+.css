@@ -262,10 +262,6 @@ a:focus {
     }
 }
 
-.content-section {
-    padding-top: 100px;
-}
-
 .download-section {
     width: 100%;
     padding: 50px 0;
@@ -292,6 +288,7 @@ a:focus {
 
 .contact-section {
     width: 100%;
+    height: 100%;
     padding: 50px 0;
     /*color: #fff;*/
     background: url(../img/map-image.png) no-repeat center center scroll;
@@ -302,7 +299,10 @@ a:focus {
     -o-background-size: cover;
 }
 
-
+.content-section {
+    padding-top: 100px;
+    height: 100%;
+}
 
 #map {
     width: 100%;
@@ -311,9 +311,9 @@ a:focus {
 }
 
 @media(min-width:767px) {
-    .content-section {
+    /*.content-section {
         padding-top: 250px;
-    }
+    }*/
 
     #resume.content-section {
         padding-top: 150px;
