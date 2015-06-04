@@ -147,7 +147,7 @@ a:focus {
 .intro {
     display: table;
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 100px 0;
     text-align: center;
     color: #fff;
@@ -276,9 +276,10 @@ a:focus {
 
 .tech-section {
     width: 100%;
+    height: auto!important;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/bg-dark-black-wood.jpg) no-repeat center bottom scroll;
+    background: url(../img/bg-dark-black-wood.jpg) repeat center bottom scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -301,7 +302,7 @@ a:focus {
 
 .content-section {
     padding-top: 100px;
-    height: 100%;
+    min-height: 100%;
 }
 
 #map {
@@ -389,7 +390,7 @@ ul.banner-social-buttons {
 }
 
 footer {
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 footer p {
@@ -455,4 +456,3 @@ body {
 .monokai-red {
     color: #ff0066
 }
-
