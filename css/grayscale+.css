@@ -452,3 +452,6 @@ body {
 .monokai-red {
     color: #ff0066
 }
+code {
+    width: 2000px;
+}
