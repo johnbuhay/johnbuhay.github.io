@@ -12,20 +12,22 @@
       {
         "company": "WeightWatchers International",
         "hire_date": "September 2007",
-        "end_date": "Present",
+        "end_date": false,
         "positions": [
           {
             "title": "DevOps Engineer",
             "team": "Automation",
             "stint": "May 2014 - present",
             "notable_accomplishments": [
-              "Created an Ansible role to automate Akamai related tasks by leveraging the Akamai Application",
-              "Created a POC python command line tool to manage GitHub tasks by leveraging the GitHub API",
-              "Created a python script for Jenkins to deploy mobile apps to Apperian upon successful build",
-              "Found and fixed an issue where jenkins plugins were not installed with proper versions in our local vagrant CI environment",
+              "Currently building a CICD pipeline with Kubernetes (a docker cluster management tool developed by Google)",
+              "Created an Ansible role to automate Akamai related tasks by leveraging the Akamai RESTful API",
+              "Created a POC python command line tool to manage GitHub tasks by leveraging the GitHub API for onboarding new employees",
+              "Created a python script for Jenkins to deploy mobile apps to Apperian upon successful build with all metadata for all countries",
+              "Found and fixed an issue where jenkins plugins were not installed with proper versions in our production deployment strategy",
               "Created Ansible roles to install and configure Magnolia CMS in Rackspace"
             ],
             "details": [
+              "Develop tools for teams to manage their own builds, tests and deployments using the latest technology",
               "Write infrastructure configurations in a Role Oriented Programming mindset",
               "Manage VisitorSite deployments on a 2 week sprint cycle and make necessary infrastructure configurations",
               "Support all teams with their infrastructure configuration needs while driving code as configuration initiative and requirement"
@@ -122,7 +124,10 @@
         "maven",
         "nodejs",
         "vagrant",
-        "virtualbox"
+        "virtualbox",
+        "docker",
+        "fleetctl",
+        "kubernetes"
       ]
     },
     {
@@ -136,9 +141,11 @@
           ]
         },
         "artifactory",
+        "drupal",
         "jenkins",
         "magnolia",
         "nginx",
+        "vulcan",
         "sublime_text"
       ]
     }
