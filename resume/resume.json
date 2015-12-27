@@ -1,167 +1,161 @@
 {
-  "contact": [
-    {
-      "name": "John Buhay",
-      "telephone": "917-239-5447",
-      "email": "jnbuhaynyc@gmail.com",
-      "location": "New York, NY"
-    }
-  ],
-  "professional_experience": {
-    "employer": [
+   "basics":{
+      "name":"John Buhay",
+      "label":"DevOps Engineer",
+      "picture":"http://jnb.nyc/img/runnersworldhattrick.jpg",
+      "email":"jnbuhaynyc+resume@gmail.com",
+      "phone":"(917) 239-5447",
+      "website":"http://jnb.nyc",
+      "summary":"I have been charged with developing efficient and maintainable products using cutting-edge technologies in the open-source / linux space. I am passionate about building solutions for development teams to be able to manage, deploy, analyze and improve their products.",
+      "location":{
+         "address":"",
+         "postalCode":"NY 10010",
+         "city":"New York",
+         "countryCode":"US"
+      },
+      "profiles":[
+         {
+            "network":"LinkedIn",
+            "username":"jnbnyc",
+            "url":"https://www.linkedin.com/in/john-buhay-040b5157"
+         }
+      ]
+   },
+   "work":[
       {
-        "company": "WeightWatchers International",
-        "hire_date": "September 2007",
-        "end_date": "Present",
-        "positions": [
-          {
-            "title": "DevOps Engineer",
-            "team": "Automation",
-            "stint": "May 2014 - present",
-            "notable_accomplishments": [
-              "Created an Ansible role to automate Akamai related tasks by leveraging the Akamai Application",
-              "Created a POC python command line tool to manage GitHub tasks by leveraging the GitHub API",
-              "Created a python script for Jenkins to deploy mobile apps to Apperian upon successful build",
-              "Found and fixed an issue where jenkins plugins were not installed with proper versions in our local vagrant CI environment",
-              "Created Ansible roles to install and configure Magnolia CMS in Rackspace"
-            ],
-            "details": [
-              "Write infrastructure configurations in a Role Oriented Programming mindset",
-              "Manage VisitorSite deployments on a 2 week sprint cycle and make necessary infrastructure configurations",
-              "Support all teams with their infrastructure configuration needs while driving code as configuration initiative and requirement"
-            ]
-          },
-          {
-            "title": "Microsite Tech Lead",
-            "team": "Engineering",
-            "stint": "March 2014 - March 2015",
-            "notable_accomplishments": [
-              "Aligned Franchise website with current online brand by producing new HTML5/CSS3 template focused on UX and automated HTML generation based on directory and asset structure using NodeJS. This allows for an efficient and short project life cycle for updates to the site.",
-              "Designed and produced the continuous build and deployment pipeline for 9 international mobile microsites."
-            ],
-            "details": [
-              "Changed the team's workflow to use a more Agile methodology",
-              "Completed Product Owners stories and drive time sensitive deployments coordinating the changes for main site promotional offers"
-            ]
-          },
-          {
-            "title": ".NET Engineer",
-            "team": "Engineering",
-            "stint": "March 2010 - May 2014",
-            "notable_accomplishments": [
-              "Worked with a third party vendor to customize the IBM WebSphere Commerce platform to replace Microsoft eCommerce Server. Developed front-end changes to maintain brand, style and improve customer experience. Coordinated with the Marketing, eCommerce and Release team to deliver seamless store availability and marketing campaigns to our 1.5 million US subscribers."
-            ],
-            "details": [
-              "Manage the ADA (American Disabilities Act) Compliance queue for completing identified defects",
-              "Coordinate with various groups to complete ADA solutions for both main and mobile sites",
-              "Troubleshoot; debug and QA hotfixes for production issues in ASP.NET",
-              "Implement code changes and QA completed tasks",
-              "Advise and support Content Operations issues as well as continue to train new employees"
-            ]
-          },
-          {
-            "title": "Global CMS Application Lead and Content Administrator",
-            "team": "Content Operations",
-            "stint": "September 2008 - September 2010",
-            "notable_accomplishments": [
-              "Worked with the creative team and backend engineers to design new signup process and implementation for US site, now used in all international subscription sites.",
-              "Improved the Weight Tracker design (a fundamental tool for online customers) and suggested code changes to engineers so that all copy could be content managed and the same code reused in multilingual countries; now used in all international subscription sites"
-            ],
-            "details": [
-              "Advised engineering on how new content would be best maintained after the Release for incorporation into the design of the project",
-              "Requested new features and bug fixes from the engineering team for the GCMS / eCommerce applications and QA the results",
-              "Continued to manage the completion of Content Operations tasks"
-            ]
-          },
-          {
-            "title": "Project Coordinator and eCommerce / GCMS Subject Matter Expert",
-            "stint": "September 2007 - September 2008",
-            "team": "Content Operations",
-            "notable_accomplishments": [
-              "Advised various teams on the capabilities of the existing web services for improving visitor experience, providing them our content dynamically and alleviating repetitive work completed by content entry team"
-            ],
-            "details": [
-              "Conducted weekly defect meetings to review outstanding issues; this improved communication to boost efficiency and drive on-time deliverables",
-              "Collaborated with engineering team to update content management tools and QA to ensure bug-free results",
-              "Trained staff and maintained user guides on eCommerce, CheetahMail and content management applications, promoting optimized content entry practices",
-              "Oversaw queue task performance, completion and quality",
-              "Managed projects, content design development and QA for international web-based projects in 29 websites in 31 languages",
-              "Organized development of electronic media and marketing campaigns directed at customer acquisition and retention",
-              "Coordinated involvement of key Product Owners and teams for projects including advertisements, eCommerce, marketing, electronic media campaigns and site maintenance",
-              "Updated project plans, driving timelines and deliverables"
-            ]
-          }
-        ]
+         "company":"WeightWatchers International Inc.",
+         "position":"DevOps Engineer / Automation",
+         "website":"http://www.weightwatchers.com",
+         "startDate":"2014-05-01",
+         "summary":"",
+         "highlights":[
+            "Built and improving a CICD pipeline with Kubernetes (a Docker cluster management tool developed by Google)",
+            "Actively developing Infrastructure-AAS with Ansible to support all teams with their environment configuration needs while driving code as configuration initiative and requirement",
+            "Design tools for teams to manage their own builds, tests and deployments using the latest technology"
+         ]
+      },
+      {
+         "company":"WeightWatchers International Inc.",
+         "position":"Engineering Lead for Franchise Marketing and Microsite Projects / Engineering",
+         "startDate":"2014-03-01",
+         "endDate":"2014-05-01",
+         "summary":"Responsible for deployment of time sensitive content for the Franchise Marketing and Microsite mobile sites",
+         "highlights":[
+            "Eliminated hours of work in a weekly sprint iteration by automating HTML generation using node.js",
+            "Automated the delivery pipeline through the entire SDLC process using git flow, Jenkins, and Ctrl-M"
+         ]
+      },
+      {
+         "company":"WeightWatchers International Inc.",
+         "position":"Engineer / Engineering",
+         "startDate":"2011-03-01",
+         "endDate":"2014-03-01",
+         "summary":"",
+         "highlights":[
+            "Managed the ADA (American Disabilities Act) Compliance Project for Engineering",
+            "Responsible for troubleshooting, implementing and validating hot fixes for production issues",
+            "Performed site validation prior to comprehensive QA testing",
+            "Continued to advise and support Content Operations on complex issues"
+         ]
+      },
+      {
+         "company":"WeightWatchers International Inc.",
+         "position":"Project Coordinator, eCommerce and CMS Application Lead / Content Operations",
+         "startDate":"2011-03-01",
+         "endDate":"2007-09-01",
+         "summary":"Managed projects involving multiple teams for feature development, marketing campaigns, eCommerce sales, advertising and content maintenance for US and 10 international subscription sites, 3 multilingual sites and 10 non-subscription sites",
+         "highlights":[
+            "Improved the Weight Tracker design by creating a CMS managed web-app (a fundamental tool for millions of online subscribers in all 12 subscription sites including 3 multilingual countries)",
+            "Enhanced visitor experience by leveraging existing web services to provide content dynamically to customer targets which increased the user time on site and the number of ad impressions while alleviating hours of repetitive work completed by Content Entry team",
+            "Provided CMS expertise in the design and implementation of the new signup process in 2009 to our front-end and back-end developers",
+            "Developed front-end changes to customize the IBM WebSphere eCommerce platform to improve customer experience and drive online product sales",
+            "Managed the Marketing, eCommerce and Engineering teams to deliver seamless store availability and marketing campaigns to our local and international subscribers",
+            "Tracked task performance, completion and quality"
+         ]
       }
-    ]
-  },
-  "technology": [
-    {
-      "languages": [
-        "ansible",
-        "yaml",
-        "python",
-        "bash / zsh",
-        {
-          "javascript": [
-            "jquery",
-            "json"
-          ]
-        },
-        "css",
-        "html",
-        "java",
-        "c++",
-        "sql",
-        "xml"
-      ]
-    },
-    {
-      "tools": [
-        "git / gitflow / github",
-        "maven",
-        "nodejs",
-        "vagrant",
-        "virtualbox"
-      ]
-    },
-    {
-      "applications": [
-        {
-          "atlassian_suite": [
-            "bitbucket",
-            "confluence",
-            "crucible + fisheye",
-            "jira"
-          ]
-        },
-        "artifactory",
-        "jenkins",
-        "magnolia",
-        "nginx",
-        "sublime_text"
-      ]
-    }
-  ],
-  "education": [
-    {
-      "school": "CodeSchool",
-      "year": "2014 - present"
-    },
-    {
-      "school": "Learning Tree",
-      "year": 2010,
-      "topic": "Certificate in ASP.NET"
-    },
-    {
-      "school": "New York University SCPS",
-      "year": 2009,
-      "topic": "Certificate in Java Programming"
-    },
-    {
-      "school": "Fordham University, Bronx, NY",
-      "year": 2007,
-      "topic": "Bachelor of Science in Computer Science"
-    }
-  ]
+   ],
+   "education":[
+      {
+         "institution":"New York University SCPS, New York, NY",
+         "studyType":"Certificate in Java Programming",
+         "endDate":"2009-03-01"
+      },
+      {
+         "institution":"Fordham University, Bronx, NY",
+         "area":"Computer Science",
+         "studyType":"Computer Science - Bachelor of Science",
+         "endDate":"2007-05-01"
+      }
+   ],
+   "awards":[
+      {
+         "title":"Certified Scrum Master",
+         "date":"2014-11-01",
+         "awarder":"Scrum Aliance",
+         "summary":""
+      }
+   ],
+   "skills":[
+      {
+         "name":"Technologies",
+         "keywords":[
+            "Docker",
+            "Kubernetes",
+            "NGINX",
+            "Jenkins",
+            "Ansible",
+            "DataDog",
+            "New Relic",
+            "Artifactory",
+            "Vagrant",
+            "VirtualBox",
+            "CoreOS",
+            "redhat",
+            "ubuntu",
+            "Akamai",
+            "Atlassian: Jira Confluence Crucible",
+            "git",
+            "git-flow",
+            "github",
+            "mysql",
+            "flowdock"
+         ]
+      },
+      {
+         "name":"Languages used",
+         "keywords":[
+            "bash",
+            "c++",
+            "java",
+            "go",
+            "groovy",
+            "python",
+            "ruby",
+            "zsh"
+         ]
+      },
+      {
+         "name":"Web Development",
+         "keywords":[
+            "HTML",
+            "CSS",
+            "Javascript",
+            "jQuery",
+            "json",
+            "xml"
+         ]
+      }
+   ],
+   "languages":[
+      {
+         "language":"English",
+         "fluency":"Native speaker"
+      }
+   ],
+   "references":[
+      {
+         "name":"Amanda Hoffman / Application Architect",
+         "reference":"I worked with John for several years at Weight Watchers and I have always been impressed with his interest in technology, his perseverance, and his business sense. John has shown initiative and leadership in every role he has held at Weight Watchers and I feel strongly that he would be a valuable addition to any company. He’s also extremely likeable and a positive influence to everyone around him."
+      }
+   ]
 }
