@@ -18,6 +18,11 @@
             "network":"LinkedIn",
             "username":"jnbnyc",
             "url":"https://www.linkedin.com/in/john-buhay-040b5157"
+         },
+         {
+            "network":"GitHub",
+            "username":"jnbnyc",
+            "url":"https://github.com/jnbnyc"
          }
       ]
    },
