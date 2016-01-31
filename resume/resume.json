@@ -82,13 +82,14 @@
    "education":[
       {
          "institution":"New York University SCPS, New York, NY",
+         "area":"Java",
          "studyType":"Certificate in Java Programming",
          "endDate":"2009-03-01"
       },
       {
          "institution":"Fordham University, Bronx, NY",
          "area":"Computer Science",
-         "studyType":"Computer Science - Bachelor of Science",
+         "studyType":"Bachelor of Science",
          "endDate":"2007-05-01"
       }
    ],
@@ -127,7 +128,7 @@
          ]
       },
       {
-         "name":"Languages used",
+         "name":"Developing with",
          "keywords":[
             "bash",
             "c++",
@@ -136,12 +137,7 @@
             "groovy",
             "python",
             "ruby",
-            "zsh"
-         ]
-      },
-      {
-         "name":"Web Development",
-         "keywords":[
+            "zsh",
             "HTML",
             "CSS",
             "Javascript",
