@@ -1,164 +1,164 @@
 {
-   "basics":{
-      "name":"John Buhay",
-      "label":"DevOps Engineer",
-      "picture":"http://jnb.nyc/img/runnersworldhattrick.jpg",
-      "email":"jnbuhaynyc+resume@gmail.com",
-      "phone":"(917) 239-5447",
-      "website":"http://jnb.nyc",
-      "summary":"I am passionate about developing efficient and maintainable products using cutting-edge technologies in the open-source / linux space. I am currently building solutions for development teams to be able to manage, deploy, analyze, and improve their products.",
-      "location":{
-         "address":"",
-         "postalCode":"NY 10010",
-         "city":"New York",
-         "countryCode":"US"
+  "basics": {
+    "name": "John Buhay",
+    "label": "DevOps Engineer",
+    "picture": "http://jnb.nyc/img/runnersworldhattrick.jpg",
+    "email": "jnbuhaynyc+resume@gmail.com",
+    "phone": "(917) 239-5447",
+    "website": "http://jnb.nyc",
+    "summary": "I am passionate about developing efficient and maintainable products using cutting-edge technologies in the open-source / linux space. I am currently building solutions for development teams to be able to manage, deploy, analyze, and improve their products.",
+    "location": {
+      "address": "",
+      "postalCode": "NY 10010",
+      "city": "New York",
+      "countryCode": "US"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "jnbnyc",
+        "url": "https://www.linkedin.com/in/john-buhay-040b5157"
       },
-      "profiles":[
-         {
-            "network":"LinkedIn",
-            "username":"jnbnyc",
-            "url":"https://www.linkedin.com/in/john-buhay-040b5157"
-         },
-         {
-            "network":"GitHub",
-            "username":"jnbnyc",
-            "url":"https://github.com/jnbnyc"
-         }
+      {
+        "network": "GitHub",
+        "username": "jnbnyc",
+        "url": "https://github.com/jnbnyc"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "WeightWatchers International Inc.",
+      "position": "DevOps Engineer / Automation",
+      "website": "http://www.weightwatchers.com",
+      "startDate": "2014-05-01",
+      "summary": "",
+      "highlights": [
+        "Helping develop and manage all 6, multi-master, multi-worker Kubernetes (a Docker cluster management tool developed by Google) on CoreOS environments relied upon by both customers and developers",
+        "Using Ansible and Groovy, developed scripts to configure Jenkins and Artifactory who create build, test, and deploy jobs from code",
+        "Developed several Jenkins CICD pipelines for multiple teams with different disciplines including Node and Scala",
+        "Built an automated system for DataDog integration with various team's containerized applications to automatically gather metrics, monitor performance, and alert surpassed thresholds to groups and individuals"
       ]
-   },
-   "work":[
-      {
-         "company":"WeightWatchers International Inc.",
-         "position":"DevOps Engineer / Automation",
-         "website":"http://www.weightwatchers.com",
-         "startDate":"2014-05-01",
-         "summary":"",
-         "highlights":[
-            "Helping develop and manage all 6, multi-master, multi-worker Kubernetes (a Docker cluster management tool developed by Google) on CoreOS environments relied upon by both customers and developers",
-            "Using Ansible and Groovy, developed scripts to configure Jenkins and Artifactory who create build, test, and deploy jobs from code",
-            "Developed several Jenkins CICD pipelines for multiple teams with different disciplines including Node and Scala",
-            "Built an automated system for DataDog integration with various team's containerized applications to automatically gather metrics, monitor performance, and alert surpassed thresholds to groups and individuals"
-         ]
-      },
-      {
-         "company":"WeightWatchers International Inc.",
-         "position":"Engineering Lead for Franchise Marketing and Microsite Projects / Engineering",
-         "startDate":"2014-03-01",
-         "endDate":"2014-05-01",
-         "summary":"Responsible for deployment of time sensitive content for the Franchise Marketing and Microsite mobile sites",
-         "highlights":[
-            "Eliminated hours of work in a weekly sprint iteration by automating HTML generation using node.js",
-            "Automated the delivery pipeline through the entire SDLC process using git flow, Jenkins, and Ctrl-M"
-         ]
-      },
-      {
-         "company":"WeightWatchers International Inc.",
-         "position":"Engineer / Engineering",
-         "startDate":"2011-03-01",
-         "endDate":"2014-03-01",
-         "summary":"",
-         "highlights":[
-            "Managed the ADA (American Disabilities Act) Compliance Project for Engineering",
-            "Responsible for troubleshooting, implementing and validating hot fixes for production issues",
-            "Performed site validation prior to comprehensive QA testing",
-            "Continued to advise and support Content Operations on complex issues"
-         ]
-      },
-      {
-         "company":"WeightWatchers International Inc.",
-         "position":"Project Coordinator, eCommerce and CMS Application Lead / Content Operations",
-         "endDate":"2011-03-01",
-         "startDate":"2007-09-01",
-         "summary":"Managed projects involving multiple teams for feature development, marketing campaigns, eCommerce sales, advertising and content maintenance for US and 10 international subscription sites, 3 multilingual sites and 10 non-subscription sites",
-         "highlights":[
-            "Improved the Weight Tracker design by creating a CMS managed web-app (a fundamental tool for millions of online subscribers in all 12 subscription sites including 3 multilingual countries)",
-            "Enhanced visitor experience by leveraging existing web services to provide content dynamically to customer targets which increased the user time on site and the number of ad impressions while alleviating hours of repetitive work completed by Content Entry team",
-            "Provided CMS expertise in the design and implementation of the new signup process in 2009 to our front-end and back-end developers",
-            "Developed front-end changes to customize the IBM WebSphere eCommerce platform to improve customer experience and drive online product sales",
-            "Managed the Marketing, eCommerce and Engineering teams to deliver seamless store availability and marketing campaigns to our local and international subscribers",
-            "Tracked task performance, completion and quality"
-         ]
-      }
-   ],
-   "education":[
-      {
-         "institution":"New York University SCPS, New York, NY",
-         "area":"Java",
-         "studyType":"Certificate in Java Programming",
-         "endDate":"2009-03-01"
-      },
-      {
-         "institution":"Fordham University, Bronx, NY",
-         "area":"Computer Science",
-         "studyType":"Bachelor of Science",
-         "endDate":"2007-05-01"
-      }
-   ],
-   "awards":[
-      {
-         "title":"Certified Scrum Master",
-         "date":"2014-11-01",
-         "awarder":"Scrum Aliance",
-         "summary":""
-      }
-   ],
-   "skills":[
-      {
-         "name":"Technologies",
-         "keywords":[
-            "Docker",
-            "Kubernetes",
-            "NGINX",
-            "Jenkins",
-            "Ansible",
-            "DataDog",
-            "NewRelic",
-            "Artifactory",
-            "Vagrant",
-            "VirtualBox",
-            "CoreOS",
-            "redhat",
-            "ubuntu",
-            "Akamai",
-            "Atlassian: Jira Confluence Crucible",
-            "git",
-            "git-flow",
-            "github",
-            "mysql",
-            "flowdock",
-            "Rackspace"
-         ]
-      },
-      {
-         "name":"Developing with",
-         "keywords":[
-            "bash",
-            "c++",
-            "java",
-            "go",
-            "groovy",
-            "python",
-            "ruby",
-            "zsh",
-            "HTML",
-            "CSS",
-            "Javascript",
-            "jQuery",
-            "json",
-            "xml"
-         ]
-      }
-   ],
-   "languages":[
-      {
-         "language":"English",
-         "fluency":"Native speaker"
-      }
-   ],
-   "references":[
-      {
-         "name":"Amanda Hoffman / Application Architect",
-         "reference":"I worked with John for several years at Weight Watchers and I have always been impressed with his interest in technology, his perseverance, and his business sense. John has shown initiative and leadership in every role he has held at Weight Watchers and I feel strongly that he would be a valuable addition to any company. He’s also extremely likeable and a positive influence to everyone around him."
-      }
-   ]
+    },
+    {
+      "company": "WeightWatchers International Inc.",
+      "position": "Engineering Lead for Franchise Marketing and Microsite Projects / Engineering",
+      "startDate": "2014-03-01",
+      "endDate": "2014-05-01",
+      "summary": "Responsible for deployment of time sensitive content for the Franchise Marketing and Microsite mobile sites",
+      "highlights": [
+        "Eliminated hours of work in a weekly sprint iteration by automating HTML generation using node.js",
+        "Automated the delivery pipeline through the entire SDLC process using git flow, Jenkins, and Ctrl-M"
+      ]
+    },
+    {
+      "company": "WeightWatchers International Inc.",
+      "position": "Engineer / Engineering",
+      "startDate": "2011-03-01",
+      "endDate": "2014-03-01",
+      "summary": "",
+      "highlights": [
+        "Managed the ADA (American Disabilities Act) Compliance Project for Engineering",
+        "Responsible for troubleshooting, implementing and validating hot fixes for production issues",
+        "Performed site validation prior to comprehensive QA testing",
+        "Continued to advise and support Content Operations on complex issues"
+      ]
+    },
+    {
+      "company": "WeightWatchers International Inc.",
+      "position": "Project Coordinator, eCommerce and CMS Application Lead / Content Operations",
+      "endDate": "2011-03-01",
+      "startDate": "2007-09-01",
+      "summary": "Managed projects involving multiple teams for feature development, marketing campaigns, eCommerce sales, advertising and content maintenance for US and 10 international subscription sites, 3 multilingual sites and 10 non-subscription sites",
+      "highlights": [
+        "Improved the Weight Tracker design by creating a CMS managed web-app (a fundamental tool for millions of online subscribers in all 12 subscription sites including 3 multilingual countries)",
+        "Enhanced visitor experience by leveraging existing web services to provide content dynamically to customer targets which increased the user time on site and the number of ad impressions while alleviating hours of repetitive work completed by Content Entry team",
+        "Provided CMS expertise in the design and implementation of the new signup process in 2009 to our front-end and back-end developers",
+        "Developed front-end changes to customize the IBM WebSphere eCommerce platform to improve customer experience and drive online product sales",
+        "Managed the Marketing, eCommerce and Engineering teams to deliver seamless store availability and marketing campaigns to our local and international subscribers",
+        "Tracked task performance, completion and quality"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "New York University SCPS, New York, NY",
+      "area": "Java",
+      "studyType": "Certificate in Java Programming",
+      "endDate": "2009-03-01"
+    },
+    {
+      "institution": "Fordham University, Bronx, NY",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science",
+      "endDate": "2007-05-01"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Certified Scrum Master",
+      "date": "2014-11-01",
+      "awarder": "Scrum Aliance",
+      "summary": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "Technologies",
+      "keywords": [
+        "Docker",
+        "Kubernetes",
+        "NGINX",
+        "Jenkins",
+        "Ansible",
+        "DataDog",
+        "NewRelic",
+        "Artifactory",
+        "Vagrant",
+        "VirtualBox",
+        "CoreOS",
+        "redhat",
+        "ubuntu",
+        "Akamai",
+        "Atlassian: Jira Confluence Crucible",
+        "git",
+        "git-flow",
+        "github",
+        "mysql",
+        "flowdock",
+        "Rackspace"
+      ]
+    },
+    {
+      "name": "Developing with",
+      "keywords": [
+        "bash",
+        "c++",
+        "java",
+        "go",
+        "groovy",
+        "python",
+        "ruby",
+        "zsh",
+        "HTML",
+        "CSS",
+        "Javascript",
+        "jQuery",
+        "json",
+        "xml"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "references": [
+    {
+      "name": "Amanda Hoffman / Application Architect",
+      "reference": "I worked with John for several years at Weight Watchers and I have always been impressed with his interest in technology, his perseverance, and his business sense. John has shown initiative and leadership in every role he has held at Weight Watchers and I feel strongly that he would be a valuable addition to any company. He’s also extremely likeable and a positive influence to everyone around him."
+    }
+  ]
 }
