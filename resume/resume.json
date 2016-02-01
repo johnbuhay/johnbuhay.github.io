@@ -6,7 +6,7 @@
       "email":"jnbuhaynyc+resume@gmail.com",
       "phone":"(917) 239-5447",
       "website":"http://jnb.nyc",
-      "summary":"I have been charged with developing efficient and maintainable products using cutting-edge technologies in the open-source / linux space. I am passionate about building solutions for development teams to be able to manage, deploy, analyze and improve their products.",
+      "summary":"I am passionate about developing efficient and maintainable products using cutting-edge technologies in the open-source / linux space. I am currently building solutions for development teams to be able to manage, deploy, analyze, and improve their products.",
       "location":{
          "address":"",
          "postalCode":"NY 10010",
@@ -34,9 +34,10 @@
          "startDate":"2014-05-01",
          "summary":"",
          "highlights":[
-            "Built and improving a CICD pipeline with Kubernetes (a Docker cluster management tool developed by Google)",
-            "Actively developing Infrastructure-AAS with Ansible to support all teams with their environment configuration needs while driving code as configuration initiative and requirement",
-            "Design tools for teams to manage their own builds, tests and deployments using the latest technology"
+            "Helping develop and manage all 6, multi-master, multi-worker Kubernetes (a Docker cluster management tool developed by Google) on CoreOS environments relied upon by both customers and developers",
+            "Using Ansible and Groovy, developed scripts to configure Jenkins and Artifactory who create build, test, and deploy jobs from code",
+            "Developed several Jenkins CICD pipelines for multiple teams with different disciplines including Node and Scala",
+            "Built an automated system for DataDog integration with various team's containerized applications to automatically gather metrics, monitor performance, and alert surpassed thresholds to groups and individuals"
          ]
       },
       {
@@ -111,7 +112,7 @@
             "Jenkins",
             "Ansible",
             "DataDog",
-            "New Relic",
+            "NewRelic",
             "Artifactory",
             "Vagrant",
             "VirtualBox",
@@ -124,7 +125,8 @@
             "git-flow",
             "github",
             "mysql",
-            "flowdock"
+            "flowdock",
+            "Rackspace"
          ]
       },
       {
