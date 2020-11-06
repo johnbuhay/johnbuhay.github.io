@@ -1,164 +1,169 @@
 {
   "basics": {
     "name": "John Buhay",
-    "label": "DevOps Engineer",
-    "picture": "http://jnb.nyc/img/runnersworldhattrick.jpg",
-    "email": "jnbuhaynyc+resume@gmail.com",
+    "label": "Senior Site Reliability Engineer",
+    "picture": "https://www.gravatar.com/avatar/a1e0a9aff15d699b42bf73ff302b7fcb?s=200",
+    "email": "buhaydev@gmail.com",
     "phone": "(917) 239-5447",
-    "website": "http://jnb.nyc",
-    "summary": "I am passionate about developing efficient and maintainable products using cutting-edge technologies in the open-source / linux space. I am currently building solutions for development teams to be able to manage, deploy, analyze, and improve their products.",
+    "summary": "Senior Site Reliability Engineer with 13 years of experience implementing Information Technology solutions including 5 years of operating and deploying distributed services on Kubernetes for WeWork and WeightWatchers in the real-estate and health care sectors",
     "location": {
       "address": "",
-      "postalCode": "NY 10010",
-      "city": "New York",
-      "countryCode": "US"
+      "postalCode": "",
+      "city": "Brooklyn, NY"
     },
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "jnbnyc",
+        "username": "johnbuhay",
         "url": "https://www.linkedin.com/in/john-buhay-040b5157"
       },
       {
         "network": "GitHub",
-        "username": "jnbnyc",
-        "url": "https://github.com/jnbnyc"
+        "username": "johnbuhay",
+        "url": "https://github.com/johnbuhay"
       }
     ]
   },
   "work": [
     {
-      "company": "WeightWatchers International Inc.",
-      "position": "DevOps Engineer / Automation",
-      "website": "http://www.weightwatchers.com",
-      "startDate": "2014-05-01",
+      "company": "WeWork",
+      "position": "Senior Site Reliability Engineer / Developer Platform Team",
+      "startDate": "2018",
       "summary": "",
       "highlights": [
-        "Helping develop and manage all 6, multi-master, multi-worker Kubernetes (a Docker cluster management tool developed by Google) on CoreOS environments relied upon by both customers and developers",
+        "Developed a self service platform for developers at WeWork to create and manage tools, software and data related workloads on top of a suite of Cloud Native Computing Foundation (CNCF) open source software (OSS)",
+        "Saved WeWork $18M/year by increasing adoption of our internal Kubernetes platform called WeK8s and by closing or reducing other SaaS products such as NewRelic, Datadog, Logentries, and AWS Accounts",
+        "Initiated the Observability team by hiring, training and supporting the team in the logging and metrics infrastructure who ultimately took over and improved the stack and provided the alternative to Datadog and NewRelic on the platform",
+        "Drove platform adoption leading to cost reduction from other SaaS providers seeing an average 70% cost reduction (Heroku ~$3M/year, NewRelic $1.8M/year saved)",
+        "Onboarded 90% of new team members to CNCF OSS used to provide the ever expanding feature set of the platform",
+        "Helped pivot team and role responsibilities to a SRE focused structure, interviewed 50 candidates and helped grow team to 40 people across Tel Aviv, New York City, and San Francisco locations",
+        "Migrated workloads from version 1 of the internal platform to version 5, built with AWS EKS when it became Generally Available",
+        "Identified and proposed solutions to 13 reliability issues across several platform functions including observability, traffic gateway and CI/CD pipelines",
+        "Helped propose and plan the execution of delivering a unified api gateway for the entire department using the nginx-ingress versus multiple hops through various proxies",
+        "Contributed to the design and goals of proprietary software called Concierge that manages access for developers and maintains responsibility of resources to it's group owner"
+      ]
+    },
+    {
+      "company": "WeWork",
+      "position": "DevOps Engineer / DevOps Team",
+      "startDate": "2016",
+      "endDate": "2018",
+      "summary": "",
+      "highlights": [
+        "Using Terraform and Ansible, provided and maintained 5 Kubernetes clusters as a platform for WeWork's most critical applications such as Identity and Physical Access",
+        "Re-envisioned the features and capabilities of the platform and supported adoption to more teams and workloads, doubled the number of services provided by the platform",
+        "Identified 3 high severity vulnerabilities in WeWork's stack and proposed solutions for immediate remediation",
+        "Collaborated on an internal cli tool to decrease the level of entry for hundreds of developers to manage their own services on Kubernetes",
+        "Designed and supported continuous deployment pipelines in Jenkins for 20 early adopter services; eventually migrated all pipelines to CircleCi for development teams to maintain their own workflows and deprecated the use of Jenkins"
+      ]
+    },
+    {
+      "company": "WeightWatchers International",
+      "position": "DevOps Engineer / Automation Team",
+      "startDate": "2014",
+      "endDate": "2016",
+      "summary": "",
+      "highlights": [
+        "Collaborated with a team of 5 on the development and maintenance of 6 Kubernetes (k8s) clusters relied upon by both customers and developers",
+        "Deployed the first production Kubernetes cluster for WeightWatchers in August 2015",
+        "Created a python command line tool that allowed 50 developers to create and manage their own applications",
+        "Contributed to the implementation of automated deployments in k8s and service registration in our custom ingress solution",
         "Using Ansible and Groovy, developed scripts to configure Jenkins and Artifactory who create build, test, and deploy jobs from code",
-        "Developed several Jenkins CICD pipelines for multiple teams with different disciplines including Node and Scala",
-        "Built an automated system for DataDog integration with various team's containerized applications to automatically gather metrics, monitor performance, and alert surpassed thresholds to groups and individuals"
+        "Developed several Jenkins CI/CD pipelines for multiple teams with different disciplines including NodeJS and Scala",
+        "Built an automated system for Datadog integration with various team's containerized applications to automatically gather metrics, monitor performance, and alert surpassed thresholds to groups and individuals",
+        "Managed hundreds of linux servers in Rackspace using Ansible",
+        "Migrated services from Rackspace to AWS using Ansible in 2016"
       ]
     },
     {
-      "company": "WeightWatchers International Inc.",
-      "position": "Engineering Lead for Franchise Marketing and Microsite Projects / Engineering",
-      "startDate": "2014-03-01",
-      "endDate": "2014-05-01",
+      "company": "WeightWatchers International",
+      "position": "Engineering Lead for Franchise Marketing and Microsite Projects / Engineering Team",
+      "startDate": "2014-03",
+      "endDate": "2014-05",
       "summary": "Responsible for deployment of time sensitive content for the Franchise Marketing and Microsite mobile sites",
-      "highlights": [
-        "Eliminated hours of work in a weekly sprint iteration by automating HTML generation using node.js",
-        "Automated the delivery pipeline through the entire SDLC process using git flow, Jenkins, and Ctrl-M"
-      ]
+      "highlights": ["Details available upon request"]
     },
     {
-      "company": "WeightWatchers International Inc.",
-      "position": "Engineer / Engineering",
-      "startDate": "2011-03-01",
-      "endDate": "2014-03-01",
-      "summary": "",
-      "highlights": [
-        "Managed the ADA (American Disabilities Act) Compliance Project for Engineering",
-        "Responsible for troubleshooting, implementing and validating hot fixes for production issues",
-        "Performed site validation prior to comprehensive QA testing",
-        "Continued to advise and support Content Operations on complex issues"
-      ]
+      "company": "WeightWatchers International",
+      "position": "Software Engineer / Engineering Team",
+      "startDate": "2011",
+      "endDate": "2014",
+      "summary": "Responsible for troubleshooting, implementing and validating hot fixes for production issues",
+      "highlights": ["Details available upon request"]
     },
     {
-      "company": "WeightWatchers International Inc.",
-      "position": "Project Coordinator, eCommerce and CMS Application Lead / Content Operations",
-      "endDate": "2011-03-01",
-      "startDate": "2007-09-01",
-      "summary": "Managed projects involving multiple teams for feature development, marketing campaigns, eCommerce sales, advertising and content maintenance for US and 10 international subscription sites, 3 multilingual sites and 10 non-subscription sites",
-      "highlights": [
-        "Improved the Weight Tracker design by creating a CMS managed web-app (a fundamental tool for millions of online subscribers in all 12 subscription sites including 3 multilingual countries)",
-        "Enhanced visitor experience by leveraging existing web services to provide content dynamically to customer targets which increased the user time on site and the number of ad impressions while alleviating hours of repetitive work completed by Content Entry team",
-        "Provided CMS expertise in the design and implementation of the new signup process in 2009 to our front-end and back-end developers",
-        "Developed front-end changes to customize the IBM WebSphere eCommerce platform to improve customer experience and drive online product sales",
-        "Managed the Marketing, eCommerce and Engineering teams to deliver seamless store availability and marketing campaigns to our local and international subscribers",
-        "Tracked task performance, completion and quality"
-      ]
+      "company": "WeightWatchers International",
+      "position": "Project Coordinator, eCommerce and CMS Application Lead / Content Operations Team",
+      "endDate": "2011",
+      "startDate": "2007",
+      "summary": "Managed projects involving multiple teams for feature development, marketing campaigns, eCommerce sales, advertising and content maintenance for US and 10 international subscription and non-subscription sites including 3 multi-lingual sites",
+      "highlights": ["Details available upon request"]
     }
   ],
   "education": [
     {
       "institution": "New York University SCPS, New York, NY",
-      "area": "Java",
-      "studyType": "Certificate in Java Programming",
-      "endDate": "2009-03-01"
+      "area": "Java Programming",
+      "studyType": "Certificate",
+      "startDate": "2009",
+      "endDate": "2009"
     },
     {
       "institution": "Fordham University, Bronx, NY",
       "area": "Computer Science",
       "studyType": "Bachelor of Science",
-      "endDate": "2007-05-01"
-    }
-  ],
-  "awards": [
-    {
-      "title": "Certified Scrum Master",
-      "date": "2014-11-01",
-      "awarder": "Scrum Aliance",
-      "summary": ""
+      "startDate": "2003",
+      "endDate": "2007"
     }
   ],
   "skills": [
     {
-      "name": "Technologies",
+      "name": "CNCF Landscape",
       "keywords": [
-        "Docker",
-        "Kubernetes",
-        "NGINX",
-        "Jenkins",
-        "Ansible",
-        "DataDog",
-        "NewRelic",
-        "Artifactory",
-        "Vagrant",
-        "VirtualBox",
-        "CoreOS",
-        "redhat",
-        "ubuntu",
-        "Akamai",
-        "Atlassian: Jira Confluence Crucible",
-        "git",
-        "git-flow",
-        "github",
-        "mysql",
-        "flowdock",
-        "Rackspace"
+        "docker",
+        "kubernetes",
+        "coredns",
+        "etcd",
+        "haproxy",
+        "helm",
+        "traefik proxy",
+        "ansible",
+        "terraform",
+        "dex",
+        "vault",
+        "cert-manager",
+        "grafana",
+        "fluentd",
+        "logstash",
+        "cluster-autoscaler",
+        "metrics-server",
+        "kube-state-metrics",
+        "kube2iam",
+        "prometheus",
+        "prometheus-alertmanager",
+        "prometheus-blackbox-exporter",
+        "prometheus-node-exporter",
+        "nginx-ingress",
+        "jaeger"
       ]
     },
     {
-      "name": "Developing with",
+      "name": "Other Technologies",
       "keywords": [
-        "bash",
-        "c++",
-        "java",
-        "go",
-        "groovy",
-        "python",
-        "ruby",
-        "zsh",
-        "HTML",
-        "CSS",
-        "Javascript",
-        "jQuery",
-        "json",
-        "xml"
+        "nginx",
+        "circleci",
+        "jenkins",
+        "ansible",
+        "datadog",
+        "newrelic",
+        "artifactory",
+        "vagrant",
+        "virtualbox",
+        "coreos",
+        "linux",
+        "akamai",
+        "opentracing"
       ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Native speaker"
-    }
-  ],
-  "references": [
-    {
-      "name": "Amanda Hoffman / Application Architect",
-      "reference": "I worked with John for several years at Weight Watchers and I have always been impressed with his interest in technology, his perseverance, and his business sense. John has shown initiative and leadership in every role he has held at Weight Watchers and I feel strongly that he would be a valuable addition to any company. He's also extremely likeable and a positive influence to everyone around him."
     }
   ]
 }

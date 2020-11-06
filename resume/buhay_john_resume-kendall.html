@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Resume of John Buhay</title>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
     <style type="text/css">
-    @import url(//fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
 @charset "utf-8";
 @-webkit-viewport   { width: device-width; }
 @-moz-viewport      { width: device-width; }
@@ -304,6 +306,17 @@ a[href]:after {
 .box {
   margin-bottom: -10px;
 }
+
+blockquote,
+#education,
+#awards,
+.contact-item,
+.publication,
+.skills,
+.interests {
+  page-break-inside: avoid;
+}
+
 .col-sm-5{
   width: 40%;
   padding: 0 15px;
@@ -378,10 +391,10 @@ a[href]:after {
           <div id="photo-header" class="text-center">
             <!-- PHOTO (AVATAR) -->
             <div id="photo">
-              <img src="http:&#x2F;&#x2F;jnb.nyc&#x2F;img&#x2F;runnersworldhattrick.jpg" alt="avatar">
+              <img src="&#x2F;&#x2F;www.gravatar.com&#x2F;avatar&#x2F;a1e0a9aff15d699b42bf73ff302b7fcb?s&#x3D;200&amp;r&#x3D;pg&amp;d&#x3D;mm" alt="avatar">
             </div>
             <div id="text-header" >
-              <h1>John Buhay<br><span>DevOps Engineer</span></h1>
+              <h1>John Buhay<br><span>Senior Site Reliability Engineer</span></h1>
             </div>
           </div>
         </div>
@@ -390,33 +403,38 @@ a[href]:after {
         <div class="col-xs-12 col-sm-7">
           <!-- ABOUT ME -->
           <div class="box">
-            <h2><i class="fa fa-user ico"></i> About</h2>
-            <p>I am passionate about developing efficient and maintainable products using cutting-edge technologies in the open-source / linux space. I am currently building solutions for development teams to be able to manage, deploy, analyze, and improve their products.</p>
+            <h2><i class="fas fa-user ico"></i> About</h2>
+            <p>Senior Site Reliability Engineer with 13 years of experience implementing Information Technology solutions including 5 years of operating and deploying distributed services on Kubernetes for WeWork and WeightWatchers in the real-estate and health care sectors</p>
           </div>
           <!-- WORK EXPERIENCE -->
           <div class="box">
-            <h2><i class= "fa fa-suitcase ico"></i> Work Experience</h2>
+            <h2><i class= "fas fa-suitcase ico"></i> Work Experience</h2>
               <div class="job clearfix">
                 <div class="row">
                   <div class="details">
-                    <div class="where">WeightWatchers International Inc.</div>
-                    <div class="address">
-                      <a href="http:&#x2F;&#x2F;www.weightwatchers.com" target= "_blank"><i class="fa fa-globe ico"></i> http:&#x2F;&#x2F;www.weightwatchers.com</a>
+                    <div class="where">
+                      
                     </div>
-                    <div class="year">May 2014 – Present</div>
+                    <div class="year">2018 – Present</div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="job-details col-xs-11">
-                    <div class="profession">DevOps Engineer &#x2F; Automation</div>
+                    <div class="profession">Senior Site Reliability Engineer &#x2F; Developer Platform Team</div>
                     <div class="description">
                       
                       <div class="highlights">Highlights</div>
                       <ul class="list-group">
-                        <li class="list-group-item">Helping develop and manage all 6, multi-master, multi-worker Kubernetes (a Docker cluster management tool developed by Google) on CoreOS environments relied upon by both customers and developers</li>
-                        <li class="list-group-item">Using Ansible and Groovy, developed scripts to configure Jenkins and Artifactory who create build, test, and deploy jobs from code</li>
-                        <li class="list-group-item">Developed several Jenkins CICD pipelines for multiple teams with different disciplines including Node and Scala</li>
-                        <li class="list-group-item">Built an automated system for DataDog integration with various team's containerized applications to automatically gather metrics, monitor performance, and alert surpassed thresholds to groups and individuals</li>
+                        <li class="list-group-item">Developed a self service platform for developers at WeWork to create and manage tools, software and data related workloads on top of a suite of Cloud Native Computing Foundation (CNCF) open source software (OSS)</li>
+                        <li class="list-group-item">Saved WeWork $18M/year by increasing adoption of our internal Kubernetes platform called WeK8s and by closing or reducing other SaaS products such as NewRelic, Datadog, Logentries, and AWS Accounts</li>
+                        <li class="list-group-item">Initiated the Observability team by hiring, training and supporting the team in the logging and metrics infrastructure who ultimately took over and improved the stack and provided the alternative to Datadog and NewRelic on the platform</li>
+                        <li class="list-group-item">Drove platform adoption leading to cost reduction from other SaaS providers seeing an average 70% cost reduction (Heroku ~$3M/year, NewRelic $1.8M/year saved)</li>
+                        <li class="list-group-item">Onboarded 90% of new team members to CNCF OSS used to provide the ever expanding feature set of the platform</li>
+                        <li class="list-group-item">Helped pivot team and role responsibilities to a SRE focused structure, interviewed 50 candidates and helped grow team to 40 people across Tel Aviv, New York City, and San Francisco locations</li>
+                        <li class="list-group-item">Migrated workloads from version 1 of the internal platform to version 5, built with AWS EKS when it became Generally Available</li>
+                        <li class="list-group-item">Identified and proposed solutions to 13 reliability issues across several platform functions including observability, traffic gateway and CI/CD pipelines</li>
+                        <li class="list-group-item">Helped propose and plan the execution of delivering a unified api gateway for the entire department using the nginx-ingress versus multiple hops through various proxies</li>
+                        <li class="list-group-item">Contributed to the design and goals of proprietary software called Concierge that manages access for developers and maintains responsibility of resources to it's group owner</li>
                       </ul>
                     </div>
                   </div>
@@ -425,19 +443,76 @@ a[href]:after {
               <div class="job clearfix">
                 <div class="row">
                   <div class="details">
-                    <div class="where">WeightWatchers International Inc.</div>
+                    <div class="where">
+                      
+                    </div>
+                    <div class="year">2016 – 2018</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">DevOps Engineer &#x2F; DevOps Team</div>
+                    <div class="description">
+                      
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Using Terraform and Ansible, provided and maintained 5 Kubernetes clusters as a platform for WeWork's most critical applications such as Identity and Physical Access</li>
+                        <li class="list-group-item">Re-envisioned the features and capabilities of the platform and supported adoption to more teams and workloads, doubled the number of services provided by the platform</li>
+                        <li class="list-group-item">Identified 3 high severity vulnerabilities in WeWork's stack and proposed solutions for immediate remediation</li>
+                        <li class="list-group-item">Collaborated on an internal cli tool to decrease the level of entry for hundreds of developers to manage their own services on Kubernetes</li>
+                        <li class="list-group-item">Designed and supported continuous deployment pipelines in Jenkins for 20 early adopter services; eventually migrated all pipelines to CircleCi for development teams to maintain their own workflows and deprecated the use of Jenkins</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      
+                    </div>
+                    <div class="year">2014 – 2016</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">DevOps Engineer &#x2F; Automation Team</div>
+                    <div class="description">
+                      
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Collaborated with a team of 5 on the development and maintenance of 6 Kubernetes (k8s) clusters relied upon by both customers and developers</li>
+                        <li class="list-group-item">Deployed the first production Kubernetes cluster for WeightWatchers in August 2015</li>
+                        <li class="list-group-item">Created a python command line tool that allowed 50 developers to create and manage their own applications</li>
+                        <li class="list-group-item">Contributed to the implementation of automated deployments in k8s and service registration in our custom ingress solution</li>
+                        <li class="list-group-item">Using Ansible and Groovy, developed scripts to configure Jenkins and Artifactory who create build, test, and deploy jobs from code</li>
+                        <li class="list-group-item">Developed several Jenkins CI/CD pipelines for multiple teams with different disciplines including NodeJS and Scala</li>
+                        <li class="list-group-item">Built an automated system for Datadog integration with various team's containerized applications to automatically gather metrics, monitor performance, and alert surpassed thresholds to groups and individuals</li>
+                        <li class="list-group-item">Managed hundreds of linux servers in Rackspace using Ansible</li>
+                        <li class="list-group-item">Migrated services from Rackspace to AWS using Ansible in 2016</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      
+                    </div>
                     <div class="year">March 2014 – May 2014</div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="job-details col-xs-11">
-                    <div class="profession">Engineering Lead for Franchise Marketing and Microsite Projects &#x2F; Engineering</div>
+                    <div class="profession">Engineering Lead for Franchise Marketing and Microsite Projects &#x2F; Engineering Team</div>
                     <div class="description">
                       Responsible for deployment of time sensitive content for the Franchise Marketing and Microsite mobile sites
                       <div class="highlights">Highlights</div>
                       <ul class="list-group">
-                        <li class="list-group-item">Eliminated hours of work in a weekly sprint iteration by automating HTML generation using node.js</li>
-                        <li class="list-group-item">Automated the delivery pipeline through the entire SDLC process using git flow, Jenkins, and Ctrl-M</li>
+                        <li class="list-group-item">Details available upon request</li>
                       </ul>
                     </div>
                   </div>
@@ -446,21 +521,20 @@ a[href]:after {
               <div class="job clearfix">
                 <div class="row">
                   <div class="details">
-                    <div class="where">WeightWatchers International Inc.</div>
-                    <div class="year">March 2011 – March 2014</div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="job-details col-xs-11">
-                    <div class="profession">Engineer &#x2F; Engineering</div>
-                    <div class="description">
+                    <div class="where">
                       
+                    </div>
+                    <div class="year">2011 – 2014</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Software Engineer &#x2F; Engineering Team</div>
+                    <div class="description">
+                      Responsible for troubleshooting, implementing and validating hot fixes for production issues
                       <div class="highlights">Highlights</div>
                       <ul class="list-group">
-                        <li class="list-group-item">Managed the ADA (American Disabilities Act) Compliance Project for Engineering</li>
-                        <li class="list-group-item">Responsible for troubleshooting, implementing and validating hot fixes for production issues</li>
-                        <li class="list-group-item">Performed site validation prior to comprehensive QA testing</li>
-                        <li class="list-group-item">Continued to advise and support Content Operations on complex issues</li>
+                        <li class="list-group-item">Details available upon request</li>
                       </ul>
                     </div>
                   </div>
@@ -469,94 +543,74 @@ a[href]:after {
               <div class="job clearfix">
                 <div class="row">
                   <div class="details">
-                    <div class="where">WeightWatchers International Inc.</div>
-                    <div class="year">September 2007 – March 2011</div>
+                    <div class="where">
+                      
+                    </div>
+                    <div class="year">2007 – 2011</div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="job-details col-xs-11">
-                    <div class="profession">Project Coordinator, eCommerce and CMS Application Lead &#x2F; Content Operations</div>
+                    <div class="profession">Project Coordinator, eCommerce and CMS Application Lead &#x2F; Content Operations Team</div>
                     <div class="description">
-                      Managed projects involving multiple teams for feature development, marketing campaigns, eCommerce sales, advertising and content maintenance for US and 10 international subscription sites, 3 multilingual sites and 10 non-subscription sites
+                      Managed projects involving multiple teams for feature development, marketing campaigns, eCommerce sales, advertising and content maintenance for US and 10 international subscription and non-subscription sites including 3 multi-lingual sites
                       <div class="highlights">Highlights</div>
                       <ul class="list-group">
-                        <li class="list-group-item">Improved the Weight Tracker design by creating a CMS managed web-app (a fundamental tool for millions of online subscribers in all 12 subscription sites including 3 multilingual countries)</li>
-                        <li class="list-group-item">Enhanced visitor experience by leveraging existing web services to provide content dynamically to customer targets which increased the user time on site and the number of ad impressions while alleviating hours of repetitive work completed by Content Entry team</li>
-                        <li class="list-group-item">Provided CMS expertise in the design and implementation of the new signup process in 2009 to our front-end and back-end developers</li>
-                        <li class="list-group-item">Developed front-end changes to customize the IBM WebSphere eCommerce platform to improve customer experience and drive online product sales</li>
-                        <li class="list-group-item">Managed the Marketing, eCommerce and Engineering teams to deliver seamless store availability and marketing campaigns to our local and international subscribers</li>
-                        <li class="list-group-item">Tracked task performance, completion and quality</li>
+                        <li class="list-group-item">Details available upon request</li>
                       </ul>
                     </div>
                   </div>
                 </div>
               </div>
-          </div>
-          <!-- AWARDS -->
-          <div class="box">
-            <h2><i class="fa fa-certificate ico"></i> Awards</h2>
-            <ul id="awards" class="clearfix">
-              <li>
-                <div class="year pull-left">November  2014</div>
-                <div class="description pull-right">
-                  <h3>Scrum Aliance</h3>
-                  <p><i class="fa fa-trophy ico"></i> Certified Scrum Master</p>
-                  <p></p>
-                </div>
-              </li>
-            </ul>
           </div>
         </div>
         <div class="col-xs-12 col-sm-5">
           <!-- CONTACT -->
           <div class="box clearfix">
-            <h2><i class="fa fa-bullseye ico"></i> Contact</h2>
+            <h2><i class="fas fa-bullseye ico"></i> Contact</h2>
             <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-map-marker fa-fw"></span></div>
-              <div class="title pull-right"></div>
-              <div class="description pull-right">New York, NY 10010 US</div>
+              <div class="icon pull-left text-center"><span class="fas fa-map-marker fa-fw"></span></div>
+              
+              <div class="title only  pull-right">Brooklyn, NY</div>
             </div>
             <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
+              <div class="icon pull-left text-center"><span class="fas fa-phone fa-fw"></span></div>
               <div class="title only pull-right">(917) 239-5447</div>
             </div>
             <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
-              <div class="title only pull-right"><a href="/cdn-cgi/l/email-protection#13797d71667b726a7d6a7038617660667e7653747e727a7f3d707c7e" target="_blank"><span class="__cf_email__" data-cfemail="62080c00170a031b0c1b0149100711170f0722050f030b0e4c010d0f">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">
-/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("data-cfhash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}t.parentNode.removeChild(t);}}catch(u){}}()/* ]]> */</script></a></div>
+              <div class="icon pull-left text-center"><span class="fas fa-envelope fa-fw"></span></div>
+              <div class="title only pull-right"><a href="mailto:buhaydev@gmail.com" target="_blank">buhaydev@gmail.com</a></div>
             </div>
             <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-globe fa-fw"></span></div>
-              <div class="title only pull-right"><a href="http:&#x2F;&#x2F;jnb.nyc" target="_blank">http:&#x2F;&#x2F;jnb.nyc</a></div>
-            </div>
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-linkedin-square fa-fw"></span></div>
+              <div class="icon pull-left text-center"><span class="fab fa-linkedin fa-fw"></span></div>
               <div class="title pull-right">LinkedIn</div>
-              <div class="description pull-right"><a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;john-buhay-040b5157" target="_blank">jnbnyc</a></div>
+              <div class="description pull-right"><a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;john-buhay-040b5157" target="_blank">johnbuhay</a></div>
             </div>
             <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fa fa-github-square fa-fw"></span></div>
+              <div class="icon pull-left text-center"><span class="fab fa-github fa-fw"></span></div>
               <div class="title pull-right">GitHub</div>
-              <div class="description pull-right"><a href="https:&#x2F;&#x2F;github.com&#x2F;jnbnyc" target="_blank">jnbnyc</a></div>
+              <div class="description pull-right"><a href="https:&#x2F;&#x2F;github.com&#x2F;johnbuhay" target="_blank">johnbuhay</a></div>
             </div>
           </div>
           <!-- EDUCATION -->
           <div class="box">
-            <h2><i class="fa fa-university ico"></i> Education</h2>
+            <h2><i class="fas fa-university ico"></i> Education</h2>
             <ul id="education" class="clearfix">
               <li>
-                <div class="year pull-left"> 2009</div>
+                <div class="year pull-left">2009 2009</div>
                 <div class="description pull-right">
                   <h3>New York University SCPS, New York, NY</h3>
-                  <p><i class= "fa fa-graduation-cap ico"></i> Certificate in Java Programming</p>
-                  <p>Java</p>
+                  <div class="where"></div>
+                  <p><i class= "fas fa-graduation-cap ico"></i> Certificate</p>
+                  <p>Java Programming</p>
                 </div>
               </li>
               <li>
-                <div class="year pull-left"> 2007</div>
+                <div class="year pull-left">2003 2007</div>
                 <div class="description pull-right">
                   <h3>Fordham University, Bronx, NY</h3>
-                  <p><i class= "fa fa-graduation-cap ico"></i> Bachelor of Science</p>
+                  <div class="where"></div>
+                  <p><i class= "fas fa-graduation-cap ico"></i> Bachelor of Science</p>
                   <p>Computer Science</p>
                 </div>
               </li>
@@ -564,87 +618,65 @@ a[href]:after {
           </div>
           <!-- SKILLS -->
           <div class="box">
-            <h2><i class="fa fa-tasks ico"></i> Skills</h2>
+            <h2><i class="fas fa-tasks ico"></i> Skills</h2>
             <div class="skills clearfix">
               <div class="item-skills">
-                  Technologies
+                  CNCF Landscape
                   
               </div>
               <div class="col-sm-offset-1 col-sm-12 clearfix">
-                <span class= "skill badge">Docker</span>
-                <span class= "skill badge">Kubernetes</span>
-                <span class= "skill badge">NGINX</span>
-                <span class= "skill badge">Jenkins</span>
-                <span class= "skill badge">Ansible</span>
-                <span class= "skill badge">DataDog</span>
-                <span class= "skill badge">NewRelic</span>
-                <span class= "skill badge">Artifactory</span>
-                <span class= "skill badge">Vagrant</span>
-                <span class= "skill badge">VirtualBox</span>
-                <span class= "skill badge">CoreOS</span>
-                <span class= "skill badge">redhat</span>
-                <span class= "skill badge">ubuntu</span>
-                <span class= "skill badge">Akamai</span>
-                <span class= "skill badge">Atlassian: Jira Confluence Crucible</span>
-                <span class= "skill badge">git</span>
-                <span class= "skill badge">git-flow</span>
-                <span class= "skill badge">github</span>
-                <span class= "skill badge">mysql</span>
-                <span class= "skill badge">flowdock</span>
-                <span class= "skill badge">Rackspace</span>
+                <span class= "skill badge">docker</span>
+                <span class= "skill badge">kubernetes</span>
+                <span class= "skill badge">coredns</span>
+                <span class= "skill badge">etcd</span>
+                <span class= "skill badge">haproxy</span>
+                <span class= "skill badge">helm</span>
+                <span class= "skill badge">traefik proxy</span>
+                <span class= "skill badge">ansible</span>
+                <span class= "skill badge">terraform</span>
+                <span class= "skill badge">dex</span>
+                <span class= "skill badge">vault</span>
+                <span class= "skill badge">cert-manager</span>
+                <span class= "skill badge">grafana</span>
+                <span class= "skill badge">fluentd</span>
+                <span class= "skill badge">logstash</span>
+                <span class= "skill badge">cluster-autoscaler</span>
+                <span class= "skill badge">metrics-server</span>
+                <span class= "skill badge">kube-state-metrics</span>
+                <span class= "skill badge">kube2iam</span>
+                <span class= "skill badge">prometheus</span>
+                <span class= "skill badge">prometheus-alertmanager</span>
+                <span class= "skill badge">prometheus-blackbox-exporter</span>
+                <span class= "skill badge">prometheus-node-exporter</span>
+                <span class= "skill badge">nginx-ingress</span>
+                <span class= "skill badge">jaeger</span>
               </div>
             </div>
             <div class="skills clearfix">
               <div class="item-skills">
-                  Developing with
+                  Other Technologies
                   
               </div>
               <div class="col-sm-offset-1 col-sm-12 clearfix">
-                <span class= "skill badge">bash</span>
-                <span class= "skill badge">c++</span>
-                <span class= "skill badge">java</span>
-                <span class= "skill badge">go</span>
-                <span class= "skill badge">groovy</span>
-                <span class= "skill badge">python</span>
-                <span class= "skill badge">ruby</span>
-                <span class= "skill badge">zsh</span>
-                <span class= "skill badge">HTML</span>
-                <span class= "skill badge">CSS</span>
-                <span class= "skill badge">Javascript</span>
-                <span class= "skill badge">jQuery</span>
-                <span class= "skill badge">json</span>
-                <span class= "skill badge">xml</span>
+                <span class= "skill badge">nginx</span>
+                <span class= "skill badge">circleci</span>
+                <span class= "skill badge">jenkins</span>
+                <span class= "skill badge">ansible</span>
+                <span class= "skill badge">datadog</span>
+                <span class= "skill badge">newrelic</span>
+                <span class= "skill badge">artifactory</span>
+                <span class= "skill badge">vagrant</span>
+                <span class= "skill badge">virtualbox</span>
+                <span class= "skill badge">coreos</span>
+                <span class= "skill badge">linux</span>
+                <span class= "skill badge">akamai</span>
+                <span class= "skill badge">opentracing</span>
               </div>
             </div>
-          </div>
-          <!-- LANGUAGES -->
-          <div class="box">
-            <h2><i class="fa fa-language ico"></i> Languages</h2>
-            <ul class="list-group">
-              <li class=" list-group-item">English<span class="skill badge pull-right">Native speaker</span></li>
-            </ul>
-          </div>
-          <div class="box">
-            <h2><i class= "fa fa-check-square ico"></i> References</h2>
-            <blockquote>
-              <div>I worked with John for several years at Weight Watchers and I have always been impressed with his interest in technology, his perseverance, and his business sense. John has shown initiative and leadership in every role he has held at Weight Watchers and I feel strongly that he would be a valuable addition to any company. He’s also extremely likeable and a positive influence to everyone around him.</div>
-              <footer>
-                <a href="" target= "_blank">Amanda Hoffman &#x2F; Application Architect</a>
-              </footer>
-            </blockquote><br>
           </div>
         </div>
       </div>
     </div>
-    <!-- JQUERY -->
-    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-    <!-- BOOTSTRAP -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-  <script type="text/javascript">
-/* <![CDATA[ */
-(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&a.indexOf("/cdn-cgi/l/email-protection") > -1  && (a.length > 28)){s='';j=27+ 1 + a.indexOf("/cdn-cgi/l/email-protection");if (a.length > j) {r=parseInt(a.substr(j,2),16);for(j+=2;a.length>j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);}t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
-/* ]]> */
-</script>
-</body>
+  </body>
 </html>
