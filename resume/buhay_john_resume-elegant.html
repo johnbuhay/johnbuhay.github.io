@@ -1,175 +1,244 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>John Buhay</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/><style>@font-face {
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>John Buhay</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/><style>@font-face {
   font-family: 'icomoon';
-  src: url(data:font/ttf;base64,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) format('truetype');
+  src:  url('fonts/icomoon.eot?z1lat9');
+  src:  url('fonts/icomoon.eot?z1lat9#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?z1lat9') format('truetype'),
+    url('fonts/icomoon.woff?z1lat9') format('woff'),
+    url('fonts/icomoon.svg?z1lat9#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-gitlab .path1:before {
+  content: "\e906";
+  color: rgb(252, 109, 38);
+}
+.icon-gitlab .path2:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(226, 67, 41);
+}
+.icon-gitlab .path3:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(252, 109, 38);
+}
+.icon-gitlab .path4:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(252, 163, 38);
+}
+.icon-gitlab .path5:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(226, 67, 41);
+}
+.icon-gitlab .path6:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(252, 109, 38);
+}
+.icon-gitlab .path7:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(252, 163, 38);
+}
+.icon-gitlab .path8:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(226, 67, 41);
+}
+.icon-meetup .path1:before {
+  content: "\e901";
+  color: rgb(255, 255, 255);
+}
+.icon-meetup .path2:before {
+  content: "\e902";
+  margin-left: -1.5em;
+  color: rgb(240, 1, 1);
+}
+.icon-meetup .path3:before {
+  content: "\e903";
+  margin-left: -1.5em;
+  color: rgb(3, 3, 3);
+}
+.icon-blogger:before {
+  content: "\e900";
+}
 .icon-exercism:before {
-	content: "\e601";
+  content: "\e601";
 }
-.icon-profile:before {
-	content: "\e600";
+.icon-telegram:before {
+  content: "\e904";
 }
-.icon-tools:before {
-	content: "\e034";
+.icon-flickr:before {
+  content: "\f16e";
 }
-.icon-location:before {
-	content: "\e602";
-}
-.icon-mail:before {
-	content: "\e603";
-}
-.icon-phone:before {
-	content: "\e03f";
-}
-.icon-newspaper:before {
-	content: "\e607";
-}
-.icon-chevron-down:before {
-	content: "\e60c";
-}
-.icon-chevron-up:before {
-	content: "\e60d";
-}
-.icon-dots-three-horizontal:before {
-	content: "\e60b";
-}
-.icon-thumbs-up:before {
-	content: "\e604";
+.icon-medium:before {
+  content: "\f23a";
 }
 .icon-heart:before {
-	content: "\f004";
+  content: "\f004";
 }
 .icon-book:before {
-	content: "\f02d";
+  content: "\f02d";
 }
 .icon-linkedin:before {
-	content: "\f08c";
+  content: "\f08c";
 }
 .icon-twitter:before {
-	content: "\f099";
+  content: "\f099";
 }
 .icon-github:before {
-	content: "\f09b";
+  content: "\f09b";
 }
 .icon-link:before {
-	content: "\f0c1";
+  content: "\f0c1";
 }
 .icon-bars:before {
-	content: "\f0c9";
+  content: "\f0c9";
 }
 .icon-pinterest:before {
-	content: "\f0d2";
+  content: "\f0d2";
 }
 .icon-googleplus:before {
-	content: "\f0d5";
+  content: "\f0d5";
 }
 .icon-circle:before {
-	content: "\f111";
+  content: "\f111";
 }
 .icon-code:before {
-	content: "\f121";
+  content: "\f121";
 }
 .icon-youtube:before {
-	content: "\f167";
+  content: "\f167";
 }
 .icon-stackoverflow:before {
-	content: "\f16c";
-}
-.icon-instagram:before {
-	content: "\f16d";
+  content: "\f16c";
 }
 .icon-bitbucket:before {
-	content: "\f171";
+  content: "\f171";
 }
 .icon-tumblr:before {
-	content: "\f173";
+  content: "\f173";
 }
 .icon-dribbble:before {
-	content: "\f17d";
+  content: "\f17d";
 }
 .icon-skype:before {
-	content: "\f17e";
+  content: "\f17e";
 }
 .icon-foursquare:before {
-	content: "\f180";
+  content: "\f180";
 }
 .icon-gittip:before {
-	content: "\f184";
+  content: "\f184";
 }
 .icon-gratipay:before {
-	content: "\f184";
+  content: "\f184";
 }
 .icon-stackexchange:before {
-	content: "\f18d";
+  content: "\f18d";
 }
 .icon-vimeo:before {
-	content: "\f194";
+  content: "\f194";
 }
 .icon-graduation-cap:before {
-	content: "\f19d";
+  content: "\f19d";
 }
 .icon-language:before {
-	content: "\f1ab";
+  content: "\f1ab";
 }
 .icon-child:before {
-	content: "\f1ae";
+  content: "\f1ae";
 }
 .icon-behance:before {
-	content: "\f1b5";
+  content: "\f1b5";
 }
 .icon-spotify:before {
-	content: "\f1bc";
+  content: "\f1bc";
 }
 .icon-soundcloud:before {
-	content: "\f1be";
+  content: "\f1be";
 }
 .icon-codepen:before {
-	content: "\f1cb";
+  content: "\f1cb";
 }
 .icon-hackernews:before {
-	content: "\f1d4";
+  content: "\f1d4";
 }
 .icon-lastfm:before {
-	content: "\f202";
+  content: "\f202";
 }
 .icon-angellist:before {
-	content: "\f209";
+  content: "\f209";
 }
 .icon-facebook:before {
-	content: "\f230";
+  content: "\f230";
+}
+.icon-instagram:before {
+  content: "\e905";
 }
 .icon-trophy:before {
-	content: "\e605";
+  content: "\e605";
 }
 .icon-office:before {
-	content: "\e606";
+  content: "\e606";
 }
 .icon-clock:before {
-	content: "\e60a";
+  content: "\e60a";
 }
 .icon-reddit:before {
-	content: "\e609";
+  content: "\e609";
+}
+.icon-profile:before {
+  content: "\e600";
+}
+.icon-tools:before {
+  content: "\e034";
+}
+.icon-location:before {
+  content: "\e602";
+}
+.icon-mail:before {
+  content: "\e603";
+}
+.icon-phone:before {
+  content: "\e03f";
+}
+.icon-newspaper:before {
+  content: "\e607";
+}
+.icon-chevron-down:before {
+  content: "\e60c";
+}
+.icon-chevron-up:before {
+  content: "\e60d";
+}
+.icon-dots-three-horizontal:before {
+  content: "\e60b";
+}
+.icon-thumbs-up:before {
+  content: "\e604";
 }
 .icon-board:before {
-	content: "\e608";
+  content: "\e608";
 }
-
 
 .relative {
   position: relative;
@@ -182,6 +251,9 @@
 }
 .space-right {
   margin-right: 10px;
+}
+.space-bottom {
+  margin-bottom: 10px;
 }
 .mr-5 {
   margin-right: 5px;
@@ -223,7 +295,7 @@
 }
 .fs-lg {
   font-size: 1.33333333em;
-  line-height: .75em;
+  line-height: 0.75em;
   vertical-align: -15%;
 }
 .fs-2x {
@@ -244,24 +316,36 @@
   padding: 0;
   outline: none !important;
 }
+/* the version when the icon file is last updated */
+@font-face {
+  font-family: 'jst-elegant';
+  src: url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.eot?f218wo");
+  src: url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.eot?f218wo#iefix") format('embedded-opentype'), url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.ttf?f218wo") format('truetype'), url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.woff?f218wo") format('woff'), url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.svg?f218wo#icomoon") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'jst-elegant' !important;
+}
 body {
   font-family: 'Lato';
   background: #f0f0f0;
-  color: #333333;
+  color: #333;
 }
 .main {
   padding: 5px;
 }
 .card {
-  background: #ffffff;
+  background: white;
   border: 1px solid #e6e6e6;
   border-radius: 3px;
   min-height: 300px;
-  padding: 10px;
+  padding: 10px 0;
 }
 .card-nested {
   min-height: 0;
-  margin-bottom: 10px;
   border-width: 1px 0 0 0;
 }
 .card-nested:before,
@@ -290,7 +374,6 @@ body {
 }
 .background-details .detail {
   display: table;
-  padding: 10px 0;
 }
 .background-details .detail .icon {
   min-width: 45px;
@@ -374,6 +457,9 @@ body {
   right: 100%;
   top: 4px;
   left: -10px;
+}
+.mop-wrapper > p:last-child {
+  margin: 0;
 }
 /*
     Credits: http://codyhouse.co/demo/smart-fixed-navigation/index.html
@@ -480,6 +566,9 @@ body {
   .profile-card-wrapper {
     position: relative;
   }
+}
+.profile-card-wrapper .profile-card {
+  padding: 10px;
 }
 .profile-pic {
   padding: 20px 0;
@@ -600,7 +689,7 @@ body {
   color: #005983;
 }
 .link-skype {
-  color: #12a5f4;
+  color: #12A5F4;
 }
 .link-skype:hover,
 .link-skype:focus {
@@ -608,12 +697,12 @@ body {
   color: #0986ca;
 }
 .link-instagram {
-  color: #3f729b;
+  color: #e4405f;
 }
 .link-instagram:hover,
 .link-instagram:focus {
   text-decoration: none;
-  color: #305777;
+  color: #d31e40;
 }
 .link-stackoverflow {
   color: #8e8e92;
@@ -672,7 +761,7 @@ body {
   color: #8c0717;
 }
 .link-gratipay {
-  color: #663300;
+  color: #630;
 }
 .link-gratipay:hover,
 .link-gratipay:focus {
@@ -752,7 +841,7 @@ body {
   color: #3b5687;
 }
 .link-angellist {
-  color: #000000;
+  color: black;
 }
 .link-angellist:hover,
 .link-angellist:focus {
@@ -782,6 +871,38 @@ body {
 .link-exercism:focus {
   text-decoration: none;
   color: #ab173e;
+}
+.link-blogger {
+  color: #FF9234;
+}
+.link-blogger:hover,
+.link-blogger:focus {
+  text-decoration: none;
+  color: #ff7701;
+}
+.link-medium {
+  color: #00AB6C;
+}
+.link-medium:hover,
+.link-medium:focus {
+  text-decoration: none;
+  color: #00784c;
+}
+.link-flickr {
+  color: black;
+}
+.link-flickr:hover,
+.link-flickr:focus {
+  text-decoration: none;
+  color: #000000;
+}
+.link-telegram {
+  color: #3BABDD;
+}
+.link-telegram:hover,
+.link-telegram:focus {
+  text-decoration: none;
+  color: #2291c3;
 }
 .card-skills {
   position: relative;
@@ -819,7 +940,7 @@ body {
   background: #5cb85c;
 }
 .skill-info {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 @media (max-width: 480px) {
   .skill-info {
@@ -830,6 +951,9 @@ body {
   .quote {
     font-size: inherit;
   }
+}
+.icon-meetup .path2:before {
+  margin-left: 0;
 }
 @media print {
   a[href]:after {
@@ -867,15 +991,45 @@ body {
     page-break-before: always;
   }
 }
-</style></head><body itemscope="itemscope" itemtype="http://schema.org/Person"><div class="container-fluid"><div class="row main clearfix"><a href="#" class="js-floating-nav-trigger floating-nav-trigger"><i class="icon-bars"></i><span class="close-icon">&times;</span></a><nav class="floating-nav js-floating-nav"><ul class="list-unstyled"><li><a href="#about"><i class="mr-10 icon-board"></i>About</a></li><li><a href="#work-experience"><i class="mr-10 icon-office"></i>Work Experience</a></li><li><a href="#skills"><i class="mr-10 icon-tools"></i>Skills</a></li><li><a href="#education"><i class="mr-10 icon-graduation-cap"></i>Education</a></li><li><a href="#awards"><i class="mr-10 icon-trophy"></i>Awards</a></li><li><a href="#references"><i class="mr-10 icon-thumbs-up"></i>References</a></li></ul></nav><section class="col-md-3 card-wrapper profile-card-wrapper affix"><div class="card profile-card"><span class="profile-pic-container"><div class="profile-pic"><img data-src="holder.js/100x100" alt="John Buhay" src="http://jnb.nyc/img/runnersworldhattrick.jpg" itemprop="image" class="media-object img-circle center-block"/></div><div class="name-and-profession text-center"><h3 itemprop="name"><b>John Buhay</b></h3><h5 itemprop="jobTitle" class="text-muted">DevOps Engineer</h5></div></span><hr/><div class="contact-details clearfix"><div class="detail"><span class="icon"><i class="icon fs-lg icon-location"></i></span><span class="info">New York, US, NY 10010</span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-phone"></i></span><span itemprop="telephone" class="info">(917) 239-5447</span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-mail"></i></span><span class="info"><a href="/cdn-cgi/l/email-protection#b1dbdfd3c4d9d0c8dfc8d29ac3d4c2c4dcd4f1d6dcd0d8dd9fd2dedc" itemprop="email" class="link-disguise"><span class="__cf_email__" data-cfemail="a8c2c6caddc0c9d1c6d1cb83dacddbddc5cde8cfc5c9c1c486cbc7c5">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">
-/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("data-cfhash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}t.parentNode.removeChild(t);}}catch(u){}}()/* ]]> */</script></a></span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-link"></i></span><span class="info"><a href="http://jnb.nyc" target="_blank">http://jnb.nyc</a></span></div><div class="detail"><span title="Languages I speak" class="icon"><i class="icon fs-lg icon-language"></i></span><span class="info">English</span></div></div><hr/><div class="social-links text-center"><div><a href="https://www.linkedin.com/in/john-buhay-040b5157" target="_blank" rel="tooltip" title="John Buhay on LinkedIn" class="fs-2x social-link link-linkedin icon-linkedin"></a><a href="https://github.com/jnbnyc" target="_blank" rel="tooltip" title="John Buhay on GitHub" class="fs-2x social-link link-github icon-github"></a></div></div></div></section><section class="col-md-9 card-wrapper pull-right"><div class="card background-card"><h4 class="text-uppercase">Background</h4><hr/><div class="background-details"><div id="about" class="detail"><div class="icon"><i class="fs-lg icon-board"></i><span class="mobile-title">About</span></div><div class="info"><h4 class="title text-uppercase">About</h4><div itemprop="description" class="content">I am passionate about developing efficient and maintainable products using cutting-edge technologies in the open-source / linux space. I am currently building solutions for development teams to be able to manage, deploy, analyze, and improve their products.</div></div></div><div id="work-experience" class="detail"><div class="icon"><i class="fs-lg icon-office"></i><span class="mobile-title">Work Experience</span></div><div class="info"><h4 class="title text-uppercase">Work Experience</h4><ul class="list-unstyled"><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><i rel="tooltip" title="Currently Working" data-placement="left" class="icon-circle current-event"></i><strong>DevOps Engineer / Automation</strong>,&nbsp;<a href="http://www.weightwatchers.com" target="_blank">WeightWatchers International Inc.</a></p><p class="text-muted"><small><span class="space-right">May, 2014 - Present</span><span><i class="icon-clock mr-5"></i>1 year 9 months</span></small></p><p></p><ul><li>Helping develop and manage all 6, multi-master, multi-worker Kubernetes (a Docker cluster management tool developed by Google) on CoreOS environments relied upon by both customers and developers</li><li>Using Ansible and Groovy, developed scripts to configure Jenkins and Artifactory who create build, test, and deploy jobs from code</li><li>Developed several Jenkins CICD pipelines for multiple teams with different disciplines including Node and Scala</li><li>Built an automated system for DataDog integration with various team's containerized applications to automatically gather metrics, monitor performance, and alert surpassed thresholds to groups and individuals</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Engineering Lead for Franchise Marketing and Microsite Projects / Engineering</strong>,&nbsp;WeightWatchers International Inc.</p><p class="text-muted"><small><span class="space-right">Mar, 2014 - May, 2014</span><span><i class="icon-clock mr-5"></i>2 months</span></small></p><p>Responsible for deployment of time sensitive content for the Franchise Marketing and Microsite mobile sites</p><ul><li>Eliminated hours of work in a weekly sprint iteration by automating HTML generation using node.js</li><li>Automated the delivery pipeline through the entire SDLC process using git flow, Jenkins, and Ctrl-M</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Engineer / Engineering</strong>,&nbsp;WeightWatchers International Inc.</p><p class="text-muted"><small><span class="space-right">Mar, 2011 - Mar, 2014</span><span><i class="icon-clock mr-5"></i>3 years</span></small></p><p></p><ul><li>Managed the ADA (American Disabilities Act) Compliance Project for Engineering</li><li>Responsible for troubleshooting, implementing and validating hot fixes for production issues</li><li>Performed site validation prior to comprehensive QA testing</li><li>Continued to advise and support Content Operations on complex issues</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Project Coordinator, eCommerce and CMS Application Lead / Content Operations</strong>,&nbsp;WeightWatchers International Inc.</p><p class="text-muted"><small><span class="space-right">Sep, 2007 - Mar, 2011</span><span><i class="icon-clock mr-5"></i>3 years 6 months</span></small></p><p>Managed projects involving multiple teams for feature development, marketing campaigns, eCommerce sales, advertising and content maintenance for US and 10 international subscription sites, 3 multilingual sites and 10 non-subscription sites</p><ul><li>Improved the Weight Tracker design by creating a CMS managed web-app (a fundamental tool for millions of online subscribers in all 12 subscription sites including 3 multilingual countries)</li><li>Enhanced visitor experience by leveraging existing web services to provide content dynamically to customer targets which increased the user time on site and the number of ad impressions while alleviating hours of repetitive work completed by Content Entry team</li><li>Provided CMS expertise in the design and implementation of the new signup process in 2009 to our front-end and back-end developers</li><li>Developed front-end changes to customize the IBM WebSphere eCommerce platform to improve customer experience and drive online product sales</li><li>Managed the Marketing, eCommerce and Engineering teams to deliver seamless store availability and marketing campaigns to our local and international subscribers</li><li>Tracked task performance, completion and quality</li></ul></div></li></ul></div></div><div id="skills" class="detail"><div class="icon"><i class="fs-lg icon-tools"></i><span class="mobile-title">Skills</span></div><div class="info"><h4 class="title text-uppercase">Skills</h4><div class="content"><ul class="list-unstyled"><li class="card card-nested card-skills"><div class="skill-info"><strong>Technologies</strong><div class="space-top labels"><span class="label label-keyword">Docker</span><span class="label label-keyword">Kubernetes</span><span class="label label-keyword">NGINX</span><span class="label label-keyword">Jenkins</span><span class="label label-keyword">Ansible</span><span class="label label-keyword">DataDog</span><span class="label label-keyword">NewRelic</span><span class="label label-keyword">Artifactory</span><span class="label label-keyword">Vagrant</span><span class="label label-keyword">VirtualBox</span><span class="label label-keyword">CoreOS</span><span class="label label-keyword">redhat</span><span class="label label-keyword">ubuntu</span><span class="label label-keyword">Akamai</span><span class="label label-keyword">Atlassian: Jira Confluence Crucible</span><span class="label label-keyword">git</span><span class="label label-keyword">git-flow</span><span class="label label-keyword">github</span><span class="label label-keyword">mysql</span><span class="label label-keyword">flowdock</span><span class="label label-keyword">Rackspace</span></div></div></li><li class="card card-nested card-skills"><div class="skill-info"><strong>Developing with</strong><div class="space-top labels"><span class="label label-keyword">bash</span><span class="label label-keyword">c++</span><span class="label label-keyword">java</span><span class="label label-keyword">go</span><span class="label label-keyword">groovy</span><span class="label label-keyword">python</span><span class="label label-keyword">ruby</span><span class="label label-keyword">zsh</span><span class="label label-keyword">HTML</span><span class="label label-keyword">CSS</span><span class="label label-keyword">Javascript</span><span class="label label-keyword">jQuery</span><span class="label label-keyword">json</span><span class="label label-keyword">xml</span></div></div></li></ul></div></div></div><div id="education" class="detail"><div class="icon"><i class="fs-lg icon-graduation-cap"></i><span class="mobile-title">Education</span></div><div class="info"><h4 class="title text-uppercase">Education</h4><div class="content"><ul class="list-unstyled"><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Java, Certificate in Java Programming,&nbsp;</strong>New York University SCPS, New York, NY</p><p class="text-muted"><small> - Mar, 2009</small></p><i></i></div></li><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Computer Science, Bachelor of Science,&nbsp;</strong>Fordham University, Bronx, NY</p><p class="text-muted"><small> - May, 2007</small></p><i></i></div></li></ul></div></div></div><div id="awards" class="detail"><div class="icon"><i class="fs-lg icon-trophy"></i><span class="mobile-title">Awards</span></div><div class="info"><h4 class="title text-uppercase">Awards</h4><div class="content"><ul class="list-unstyled"><li class="card card-nested"><div class="content"><p itemprop="award" class="clear-margin"><strong>Certified Scrum Master </strong>Scrum Aliance</p><p class="text-muted"><small>Awarded on: Nov 01, 2014</small></p><p class="clear-margin"></p></div></li></ul></div></div></div><div id="references" class="detail"><div class="icon"><i class="fs-lg icon-thumbs-up"></i><span class="mobile-title">References</span></div><div class="info"><h4 class="title text-uppercase">References</h4><div class="content"><ul class="list-unstyled"><li class="card card-nested"><p><strong>Amanda Hoffman / Application Architect</strong></p><blockquote class="quote"><p class="clear-margin">I worked with John for several years at Weight Watchers and I have always been impressed with his interest in technology, his perseverance, and his business sense. John has shown initiative and leadership in every role he has held at Weight Watchers and I feel strongly that he would be a valuable addition to any company. He’s also extremely likeable and a positive influence to everyone around him.</p></blockquote></li></ul></div></div></div></div></div></section></div></div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/tooltip.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/collapse.js"></script><script>$(function () {
+</style></head><body itemscope="itemscope" itemtype="http://schema.org/Person"><div class="container-fluid"><div class="row main clearfix"><a class="js-floating-nav-trigger floating-nav-trigger" href="#"><i class="icon-bars"></i><span class="close-icon">&times;</span></a><nav class="floating-nav js-floating-nav"><ul class="list-unstyled"><li><a href="#about"><i class="mr-10 icon-board"></i>About</a></li><li><a href="#work-experience"><i class="mr-10 icon-office"></i>Work Experience</a></li><li><a href="#skills"><i class="mr-10 icon-tools"></i>Skills</a></li><li><a href="#education"><i class="mr-10 icon-graduation-cap"></i>Education</a></li></ul></nav><section class="col-md-3 card-wrapper profile-card-wrapper affix"><div class="card profile-card"><span class="profile-pic-container"><div class="profile-pic"><img class="media-object img-circle center-block" data-src="holder.js/100x100" alt="John Buhay" src="https://www.gravatar.com/avatar/a1e0a9aff15d699b42bf73ff302b7fcb?s=200" itemprop="image"/></div><div class="name-and-profession text-center"><h3 itemprop="name"><b>John Buhay</b></h3><h5 class="text-muted" itemprop="jobTitle">Senior Site Reliability Engineer</h5></div></span><hr/><div class="contact-details clearfix"><div class="detail"><span class="icon"><i class="icon fs-lg icon-location"></i></span><span class="info">Brooklyn, NY</span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-phone"></i></span><span class="info" itemprop="telephone">(917) 239-5447</span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-mail"></i></span><span class="info"><a class="link-disguise" href="mailto:buhaydev@gmail.com" itemprop="email">buhaydev@gmail.com</a></span></div></div><hr/><div class="social-links text-center"><div><a class="fs-2x social-link link-linkedin icon-linkedin" href="https://www.linkedin.com/in/john-buhay-040b5157" target="_blank" data-toggle="tooltip" title="John Buhay on LinkedIn"></a><a class="fs-2x social-link link-github icon-github" href="https://github.com/johnbuhay" target="_blank" data-toggle="tooltip" title="John Buhay on GitHub"></a></div></div></div></section><section class="col-md-9 card-wrapper pull-right"><div class="card background-card"><h4 class="text-uppercase">Background</h4><hr/><div class="background-details"><div class="detail" id="about"><div class="icon"><i class="fs-lg icon-board"></i><span class="mobile-title">About</span></div><div class="info"><h4 class="title text-uppercase">About</h4><div class="card card-nested"><div class="content mop-wrapper" itemprop="description"><p>Senior Site Reliability Engineer with 13 years of experience implementing Information Technology solutions including 5 years of operating and deploying distributed services on Kubernetes for WeWork and WeightWatchers in the real-estate and health care sectors</p>
+</div></div></div></div><div class="detail" id="work-experience"><div class="icon"><i class="fs-lg icon-office"></i><span class="mobile-title">Work Experience</span></div><div class="info"><h4 class="title text-uppercase">Work Experience</h4><ul class="list-unstyled clear-margin"><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><i class="icon-circle current-event" rel="tooltip" title="Currently Working" data-placement="left"></i><strong>Senior Site Reliability Engineer / Developer Platform Team</strong>,&nbsp;WeWork</p><p class="text-muted"><small><span class="space-right">Jan, 2018 - Present</span></small></p><div class="mop-wrapper space-bottom"></div><ul><li class="mop-wrapper"><p>Developed a self service platform for developers at WeWork to create and manage tools, software and data related workloads on top of a suite of Cloud Native Computing Foundation (CNCF) open source software (OSS)</p>
+</li><li class="mop-wrapper"><p>Saved WeWork $18M/year by increasing adoption of our internal Kubernetes platform called WeK8s and by closing or reducing other SaaS products such as NewRelic, Datadog, Logentries, and AWS Accounts</p>
+</li><li class="mop-wrapper"><p>Initiated the Observability team by hiring, training and supporting the team in the logging and metrics infrastructure who ultimately took over and improved the stack and provided the alternative to Datadog and NewRelic on the platform</p>
+</li><li class="mop-wrapper"><p>Drove platform adoption leading to cost reduction from other SaaS providers seeing an average 70% cost reduction (Heroku ~$3M/year, NewRelic $1.8M/year saved)</p>
+</li><li class="mop-wrapper"><p>Onboarded 90% of new team members to CNCF OSS used to provide the ever expanding feature set of the platform</p>
+</li><li class="mop-wrapper"><p>Helped pivot team and role responsibilities to a SRE focused structure, interviewed 50 candidates and helped grow team to 40 people across Tel Aviv, New York City, and San Francisco locations</p>
+</li><li class="mop-wrapper"><p>Migrated workloads from version 1 of the internal platform to version 5, built with AWS EKS when it became Generally Available</p>
+</li><li class="mop-wrapper"><p>Identified and proposed solutions to 13 reliability issues across several platform functions including observability, traffic gateway and CI/CD pipelines</p>
+</li><li class="mop-wrapper"><p>Helped propose and plan the execution of delivering a unified api gateway for the entire department using the nginx-ingress versus multiple hops through various proxies</p>
+</li><li class="mop-wrapper"><p>Contributed to the design and goals of proprietary software called Concierge that manages access for developers and maintains responsibility of resources to it's group owner</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>DevOps Engineer / DevOps Team</strong>,&nbsp;WeWork</p><p class="text-muted"><small><span class="space-right">Jan, 2016 - Jan, 2018</span><span><i class="icon-clock mr-5"></i>2 years</span></small></p><div class="mop-wrapper space-bottom"></div><ul><li class="mop-wrapper"><p>Using Terraform and Ansible, provided and maintained 5 Kubernetes clusters as a platform for WeWork's most critical applications such as Identity and Physical Access</p>
+</li><li class="mop-wrapper"><p>Re-envisioned the features and capabilities of the platform and supported adoption to more teams and workloads, doubled the number of services provided by the platform</p>
+</li><li class="mop-wrapper"><p>Identified 3 high severity vulnerabilities in WeWork's stack and proposed solutions for immediate remediation</p>
+</li><li class="mop-wrapper"><p>Collaborated on an internal cli tool to decrease the level of entry for hundreds of developers to manage their own services on Kubernetes</p>
+</li><li class="mop-wrapper"><p>Designed and supported continuous deployment pipelines in Jenkins for 20 early adopter services; eventually migrated all pipelines to CircleCi for development teams to maintain their own workflows and deprecated the use of Jenkins</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>DevOps Engineer / Automation Team</strong>,&nbsp;WeightWatchers International</p><p class="text-muted"><small><span class="space-right">Jan, 2014 - Jan, 2016</span><span><i class="icon-clock mr-5"></i>2 years</span></small></p><div class="mop-wrapper space-bottom"></div><ul><li class="mop-wrapper"><p>Collaborated with a team of 5 on the development and maintenance of 6 Kubernetes (k8s) clusters relied upon by both customers and developers</p>
+</li><li class="mop-wrapper"><p>Deployed the first production Kubernetes cluster for WeightWatchers in August 2015</p>
+</li><li class="mop-wrapper"><p>Created a python command line tool that allowed 50 developers to create and manage their own applications</p>
+</li><li class="mop-wrapper"><p>Contributed to the implementation of automated deployments in k8s and service registration in our custom ingress solution</p>
+</li><li class="mop-wrapper"><p>Using Ansible and Groovy, developed scripts to configure Jenkins and Artifactory who create build, test, and deploy jobs from code</p>
+</li><li class="mop-wrapper"><p>Developed several Jenkins CI/CD pipelines for multiple teams with different disciplines including NodeJS and Scala</p>
+</li><li class="mop-wrapper"><p>Built an automated system for Datadog integration with various team's containerized applications to automatically gather metrics, monitor performance, and alert surpassed thresholds to groups and individuals</p>
+</li><li class="mop-wrapper"><p>Managed hundreds of linux servers in Rackspace using Ansible</p>
+</li><li class="mop-wrapper"><p>Migrated services from Rackspace to AWS using Ansible in 2016</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Engineering Lead for Franchise Marketing and Microsite Projects / Engineering Team</strong>,&nbsp;WeightWatchers International</p><p class="text-muted"><small><span class="space-right">Mar, 2014 - May, 2014</span><span><i class="icon-clock mr-5"></i>2 months</span></small></p><div class="mop-wrapper space-bottom"><p>Responsible for deployment of time sensitive content for the Franchise Marketing and Microsite mobile sites</p>
+</div><ul><li class="mop-wrapper"><p>Details available upon request</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Software Engineer / Engineering Team</strong>,&nbsp;WeightWatchers International</p><p class="text-muted"><small><span class="space-right">Jan, 2011 - Jan, 2014</span><span><i class="icon-clock mr-5"></i>3 years</span></small></p><div class="mop-wrapper space-bottom"><p>Responsible for troubleshooting, implementing and validating hot fixes for production issues</p>
+</div><ul><li class="mop-wrapper"><p>Details available upon request</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Project Coordinator, eCommerce and CMS Application Lead / Content Operations Team</strong>,&nbsp;WeightWatchers International</p><p class="text-muted"><small><span class="space-right">Jan, 2007 - Jan, 2011</span><span><i class="icon-clock mr-5"></i>4 years</span></small></p><div class="mop-wrapper space-bottom"><p>Managed projects involving multiple teams for feature development, marketing campaigns, eCommerce sales, advertising and content maintenance for US and 10 international subscription and non-subscription sites including 3 multi-lingual sites</p>
+</div><ul><li class="mop-wrapper"><p>Details available upon request</p>
+</li></ul></div></li></ul></div></div><div class="detail" id="skills"><div class="icon"><i class="fs-lg icon-tools"></i><span class="mobile-title">Skills</span></div><div class="info"><h4 class="title text-uppercase">Skills</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested card-skills"><div class="skill-info"><strong>CNCF Landscape</strong><div class="space-top labels"><span class="label label-keyword">docker</span><span class="label label-keyword">kubernetes</span><span class="label label-keyword">coredns</span><span class="label label-keyword">etcd</span><span class="label label-keyword">haproxy</span><span class="label label-keyword">helm</span><span class="label label-keyword">traefik proxy</span><span class="label label-keyword">ansible</span><span class="label label-keyword">terraform</span><span class="label label-keyword">dex</span><span class="label label-keyword">vault</span><span class="label label-keyword">cert-manager</span><span class="label label-keyword">grafana</span><span class="label label-keyword">fluentd</span><span class="label label-keyword">logstash</span><span class="label label-keyword">cluster-autoscaler</span><span class="label label-keyword">metrics-server</span><span class="label label-keyword">kube-state-metrics</span><span class="label label-keyword">kube2iam</span><span class="label label-keyword">prometheus</span><span class="label label-keyword">prometheus-alertmanager</span><span class="label label-keyword">prometheus-blackbox-exporter</span><span class="label label-keyword">prometheus-node-exporter</span><span class="label label-keyword">nginx-ingress</span><span class="label label-keyword">jaeger</span></div></div></li><li class="card card-nested card-skills"><div class="skill-info"><strong>Other Technologies</strong><div class="space-top labels"><span class="label label-keyword">nginx</span><span class="label label-keyword">circleci</span><span class="label label-keyword">jenkins</span><span class="label label-keyword">ansible</span><span class="label label-keyword">datadog</span><span class="label label-keyword">newrelic</span><span class="label label-keyword">artifactory</span><span class="label label-keyword">vagrant</span><span class="label label-keyword">virtualbox</span><span class="label label-keyword">coreos</span><span class="label label-keyword">linux</span><span class="label label-keyword">akamai</span><span class="label label-keyword">opentracing</span></div></div></li></ul></div></div></div><div class="detail" id="education"><div class="icon"><i class="fs-lg icon-graduation-cap"></i><span class="mobile-title">Education</span></div><div class="info"><h4 class="title text-uppercase">Education</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Java Programming, Certificate,&nbsp;</strong>New York University SCPS, New York, NY</p><p class="text-muted clear-margin"><small>Jan, 2009 - Jan, 2009</small></p><i></i></div></li><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Computer Science, Bachelor of Science,&nbsp;</strong>Fordham University, Bronx, NY</p><p class="text-muted clear-margin"><small>Jan, 2003 - Jan, 2007</small></p><i></i></div></li></ul></div></div></div></div></div></section></div></div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script><script>$(function () {
   var toggleFloatingMenu = function() {
     $( '.js-floating-nav' ).toggleClass( 'is-visible' );
     $( '.js-floating-nav-trigger' ).toggleClass( 'is-open' );
   };
 
   $( ".background-card" ).css( "min-height", window.screen.availHeight + "px" );
-  $( "[rel=tooltip]" ).tooltip();
+  $( "[data-toggle=tooltip]" ).tooltip();
   $( '.js-floating-nav-trigger' ).on( 'click', function(e) {
     e.preventDefault();
     toggleFloatingMenu();
@@ -905,9 +1059,4 @@ body {
   wf.async = 'true';
   var s = document.getElementsByTagName('script')[0];
   s.parentNode.insertBefore(wf, s);
-})();</script><script type="text/javascript">
-/* <![CDATA[ */
-(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&a.indexOf("/cdn-cgi/l/email-protection") > -1  && (a.length > 28)){s='';j=27+ 1 + a.indexOf("/cdn-cgi/l/email-protection");if (a.length > j) {r=parseInt(a.substr(j,2),16);for(j+=2;a.length>j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);}t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
-/* ]]> */
-</script>
-</body></html>
+})();</script></body></html>

@@ -1,0 +1,424 @@
+<!doctype html>
+<html>
+	<head>
+
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, user-scalable=no, minimal-ui'>
+
+	<title>John Buhay</title>
+
+	<style>
+	body {
+  background: #EEEEEE;
+  font: 12px "Times New Roman", Times, sans-serif;
+  line-height: 1.4;
+  margin: 40px 0;
+}
+em {
+  color: #999;
+}
+p {
+  line-height: 1.4;
+}
+ul {
+  margin-bottom: 0;
+}
+li {
+  margin-bottom: 2px;
+}
+a {
+  text-decoration: none;
+}
+
+#resume {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 80px 100px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 4px #aaa;
+  -webkit-box-shadow: 2px 2px 4px #aaa;
+}
+
+.coursesList {
+  width: 28%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.largeFont {
+  font-size: 20px;
+}
+
+.smallFont {
+  font-size: 12px;
+}
+
+.sectionBlock {
+  display: flex;
+  width: 100%;
+}
+
+.sectionName {
+  width: 18%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.sectionContent {
+  width: 80%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.sectionContent ul {
+  padding-left: 20px;
+  margin-top: 6px;
+  list-style-type: circle;
+}
+
+.sectionContent .title {
+  font-weight: bold;
+}
+
+.sectionContent .date {
+  float: right;
+}
+
+.sectionContent .separator {
+  height: 14px;
+}
+
+.sectionLine {
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #CFCFCF;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.divider {
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.summary {
+  margin-top: 6px;
+}
+
+.skillBlock {
+  margin-bottom: 4px;
+}
+
+.jobBlock {
+  page-break-inside: avoid;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 40em) {
+  body {
+    margin: 0;
+    font-size: 14px;
+  }
+  #resume {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0.5em 1em;
+    border: none;
+  }
+  .sectionContent {
+    width: 100%;
+  }
+  .sectionContent .date {
+    padding-right: 2em;
+  }
+  .sectionName {
+    width: auto;
+  }
+  .largeFont {
+    font-size: 20px;
+  }
+  .smallFont {
+    font-size: 14px;
+  }
+}
+
+@media print {
+  #resume {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0px 0px;
+    border: 0px;
+    background: #fff;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+
+  a {
+    color: black;
+  }
+}
+
+	</style>
+
+	</head>
+	<body>
+
+	<div id='resume'>
+  <div id='nameBlock' class='largeFont'>
+    <span class='name'>
+      John Buhay,
+    </span>
+    <span class='label'>Senior Site Reliability Engineer</span>
+  </div>
+  <div id='basicsBlock' class='smallFont'>
+    <div class='contactBlock'>
+      <span class='email'>buhaydev@gmail.com</span>
+      <span class='divider'>|</span>
+      <span class='phone'>(917) 239-5447</span>
+        <span class='divider'>|</span>
+        <span class='address'>
+          Brooklyn, NY
+        </span>
+    </div>
+      <div id='profilesBlock'>
+            <span class='url'>
+              <a href='https://www.linkedin.com/in/john-buhay-040b5157'>https://www.linkedin.com/in/john-buhay-040b5157</a>
+            </span>
+            <span class='divider'>|</span>
+            <span class='url'>
+              <a href='https://github.com/johnbuhay'>https://github.com/johnbuhay</a>
+            </span>
+            
+      </div>
+  </div>
+  <div class='sectionLine'></div>
+
+  <div id='summaryBlock' class="sectionBlock">
+    <div class='sectionName'>
+      <span>SUMMARY</span>
+    </div>
+    <div class='sectionContent'>
+      <span>Senior Site Reliability Engineer with 13 years of experience implementing Information Technology solutions including 5 years of operating and deploying distributed services on Kubernetes for WeWork and WeightWatchers in the real-estate and health care sectors</span>
+    </div>
+  </div>
+  <div class='sectionLine'></div>
+
+  <div id='workBlock' class="sectionBlock">
+    <div class='sectionName'>
+      <span>EXPERIENCE</span>
+    </div>
+    <div class='sectionContent'>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          WeWork, Senior Site Reliability Engineer / Developer Platform Team
+	        </span>
+	        <span class='date'>
+	          2018 &mdash; Present
+	        </span>
+	      </div>
+	      <div><a href=''></a></div>
+	      <ul class='highlights'>
+	        <li>Developed a self service platform for developers at WeWork to create and manage tools, software and data related workloads on top of a suite of Cloud Native Computing Foundation (CNCF) open source software (OSS)</li>
+	        <li>Saved WeWork $18M/year by increasing adoption of our internal Kubernetes platform called WeK8s and by closing or reducing other SaaS products such as NewRelic, Datadog, Logentries, and AWS Accounts</li>
+	        <li>Initiated the Observability team by hiring, training and supporting the team in the logging and metrics infrastructure who ultimately took over and improved the stack and provided the alternative to Datadog and NewRelic on the platform</li>
+	        <li>Drove platform adoption leading to cost reduction from other SaaS providers seeing an average 70% cost reduction (Heroku ~$3M/year, NewRelic $1.8M/year saved)</li>
+	        <li>Onboarded 90% of new team members to CNCF OSS used to provide the ever expanding feature set of the platform</li>
+	        <li>Helped pivot team and role responsibilities to a SRE focused structure, interviewed 50 candidates and helped grow team to 40 people across Tel Aviv, New York City, and San Francisco locations</li>
+	        <li>Migrated workloads from version 1 of the internal platform to version 5, built with AWS EKS when it became Generally Available</li>
+	        <li>Identified and proposed solutions to 13 reliability issues across several platform functions including observability, traffic gateway and CI/CD pipelines</li>
+	        <li>Helped propose and plan the execution of delivering a unified api gateway for the entire department using the nginx-ingress versus multiple hops through various proxies</li>
+	        <li>Contributed to the design and goals of proprietary software called Concierge that manages access for developers and maintains responsibility of resources to it&#x27;s group owner</li>
+	      </ul>
+	      <div class='separator'></div>
+			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          WeWork, DevOps Engineer / DevOps Team
+	        </span>
+	        <span class='date'>
+	          2016 &mdash; 2018
+	        </span>
+	      </div>
+	      <div><a href=''></a></div>
+	      <ul class='highlights'>
+	        <li>Using Terraform and Ansible, provided and maintained 5 Kubernetes clusters as a platform for WeWork&#x27;s most critical applications such as Identity and Physical Access</li>
+	        <li>Re-envisioned the features and capabilities of the platform and supported adoption to more teams and workloads, doubled the number of services provided by the platform</li>
+	        <li>Identified 3 high severity vulnerabilities in WeWork&#x27;s stack and proposed solutions for immediate remediation</li>
+	        <li>Collaborated on an internal cli tool to decrease the level of entry for hundreds of developers to manage their own services on Kubernetes</li>
+	        <li>Designed and supported continuous deployment pipelines in Jenkins for 20 early adopter services; eventually migrated all pipelines to CircleCi for development teams to maintain their own workflows and deprecated the use of Jenkins</li>
+	      </ul>
+	      <div class='separator'></div>
+			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          WeightWatchers International, DevOps Engineer / Automation Team
+	        </span>
+	        <span class='date'>
+	          2014 &mdash; 2016
+	        </span>
+	      </div>
+	      <div><a href=''></a></div>
+	      <ul class='highlights'>
+	        <li>Collaborated with a team of 5 on the development and maintenance of 6 Kubernetes (k8s) clusters relied upon by both customers and developers</li>
+	        <li>Deployed the first production Kubernetes cluster for WeightWatchers in August 2015</li>
+	        <li>Created a python command line tool that allowed 50 developers to create and manage their own applications</li>
+	        <li>Contributed to the implementation of automated deployments in k8s and service registration in our custom ingress solution</li>
+	        <li>Using Ansible and Groovy, developed scripts to configure Jenkins and Artifactory who create build, test, and deploy jobs from code</li>
+	        <li>Developed several Jenkins CI/CD pipelines for multiple teams with different disciplines including NodeJS and Scala</li>
+	        <li>Built an automated system for Datadog integration with various team&#x27;s containerized applications to automatically gather metrics, monitor performance, and alert surpassed thresholds to groups and individuals</li>
+	        <li>Managed hundreds of linux servers in Rackspace using Ansible</li>
+	        <li>Migrated services from Rackspace to AWS using Ansible in 2016</li>
+	      </ul>
+	      <div class='separator'></div>
+			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          WeightWatchers International, Engineering Lead for Franchise Marketing and Microsite Projects / Engineering Team
+	        </span>
+	        <span class='date'>
+	          2014-03 &mdash; 2014-05
+	        </span>
+	      </div>
+	      <div><a href=''></a></div>
+	      <ul class='highlights'>
+	        <li>Responsible for deployment of time sensitive content for the Franchise Marketing and Microsite mobile sites</li>
+	        <li>Details available upon request</li>
+	      </ul>
+	      <div class='separator'></div>
+			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          WeightWatchers International, Software Engineer / Engineering Team
+	        </span>
+	        <span class='date'>
+	          2011 &mdash; 2014
+	        </span>
+	      </div>
+	      <div><a href=''></a></div>
+	      <ul class='highlights'>
+	        <li>Responsible for troubleshooting, implementing and validating hot fixes for production issues</li>
+	        <li>Details available upon request</li>
+	      </ul>
+	      <div class='separator'></div>
+			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          WeightWatchers International, Project Coordinator, eCommerce and CMS Application Lead / Content Operations Team
+	        </span>
+	        <span class='date'>
+	          2007 &mdash; 2011
+	        </span>
+	      </div>
+	      <div><a href=''></a></div>
+	      <ul class='highlights'>
+	        <li>Managed projects involving multiple teams for feature development, marketing campaigns, eCommerce sales, advertising and content maintenance for US and 10 international subscription and non-subscription sites including 3 multi-lingual sites</li>
+	        <li>Details available upon request</li>
+	      </ul>
+	      
+			</div>
+    </div>
+  </div>
+  <div class='sectionLine'></div>
+
+
+
+
+	<div id='education' class="sectionBlock">
+    <div class='sectionName'>
+      <span>EDUCATION</span>
+    </div>
+    <div class='sectionContent'>
+      <div class='educationBlock'>
+        <span class='title'>
+          New York University SCPS, New York, NY
+        </span>
+        <span class='date'>
+          2009 &mdash; 2009
+        </span>
+        <div class=''>
+          Certificate  - Java Programming
+        </div>
+      </div>
+      <div class='separator'></div>
+      <div class='educationBlock'>
+        <span class='title'>
+          Fordham University, Bronx, NY
+        </span>
+        <span class='date'>
+          2003 &mdash; 2007
+        </span>
+        <div class=''>
+          Bachelor of Science  - Computer Science
+        </div>
+      </div>
+      
+    </div>
+	</div>
+  <div class='sectionLine'></div>
+
+	<div id='skills' class="sectionBlock">
+    <div class='sectionName'>
+      <span>SKILLS</span>
+    </div>
+    <div class='sectionContent'>
+      <div class='skillBlock'>
+        <span class='title'>CNCF Landscape:</span>
+          <span>docker</span>, 
+          <span>kubernetes</span>, 
+          <span>coredns</span>, 
+          <span>etcd</span>, 
+          <span>haproxy</span>, 
+          <span>helm</span>, 
+          <span>traefik proxy</span>, 
+          <span>ansible</span>, 
+          <span>terraform</span>, 
+          <span>dex</span>, 
+          <span>vault</span>, 
+          <span>cert-manager</span>, 
+          <span>grafana</span>, 
+          <span>fluentd</span>, 
+          <span>logstash</span>, 
+          <span>cert-manager</span>, 
+          <span>cluster-autoscaler</span>, 
+          <span>metrics-server</span>, 
+          <span>kube-state-metrics</span>, 
+          <span>kube2iam</span>, 
+          <span>prometheus</span>, 
+          <span>prometheus-alertmanager</span>, 
+          <span>prometheus-blackbox-exporter</span>, 
+          <span>prometheus-node-exporter</span>, 
+          <span>nginx-ingress</span>, 
+          <span>jaeger</span>
+      </div>
+      <div class='skillBlock'>
+        <span class='title'>Other Technologies:</span>
+          <span>nginx</span>, 
+          <span>circleci</span>, 
+          <span>jenkins</span>, 
+          <span>ansible</span>, 
+          <span>datadog</span>, 
+          <span>newrelic</span>, 
+          <span>artifactory</span>, 
+          <span>vagrant</span>, 
+          <span>virtualbox</span>, 
+          <span>coreos</span>, 
+          <span>linux</span>, 
+          <span>akamai</span>, 
+          <span>opentracing</span>
+      </div>
+    </div>
+	</div>
+  <div class='sectionLine'></div>
+
+
+
+	</body>
+</html>
